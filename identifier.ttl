@@ -1,0 +1,181 @@
+@prefix : <http://pid.geoscience.gov.au/def/voc/ga/igsn/identifier/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+
+<http://pid.geoscience.gov.au/def/voc/ga/igsn/identifier> a skos:ConceptScheme ;
+  dct:title "IGSN Identifier Types"@en ;
+  dct:description """This vocabulary contains terms describing different regimes that issue identifiers for digital objects, such as IGSN itself"""@en ;
+	dc:creator "Nicholas Car" ;
+	dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+  dct:created "2019-03-20"^^xsd:date ;
+	dct:issued "2019-03-20"^^xsd:date ;
+	dct:issued "2019-03-20"^^xsd:date ;
+	dct:publisher <http://catalogue.linked.data.gov.au/org/O-000887> ;
+  dc:publisher "Geoscience Australia" ;
+	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/accessType.xsd> ;
+	owl:versionInfo "v1.0" ;
+  skos:historyNote "This vocabulary was extracted from a previous SKOS publication of the IGSN codelists at http://pid.geoscience.gov.au/def/voc/ga/igsncode to separate what that vocabulary had as multiple skos:Collections into individual vocabularies (skos:ConceptSchemes)." ;
+  skos:hasTopConcept
+    :Unknown ,
+    :ARK ,
+    :DOI ,
+    :Handle ,
+    :IGSN ,
+    :ISBN ,
+    :ISNI ,
+    :ISSN ,
+    :LSID ,
+    :ORCID ,
+    :PURL ,
+    :URI ,
+    :URN ,
+    :VIAF ;
+.
+
+:ARK a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Archival Resource Key" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "An Archival Resource Key (ARK) is a Uniform Resource Locator (URL) that is a multi-purpose persistent identifier for information objects of any type."@en ;
+	dct:source "https://confluence.ucop.edu/display/Curation/ARK" ;
+  dc:creator "IGSN Technical Committee" ;
+  dc:contributor "Nicholas Car" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+:DOI a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Digital Object Identifier" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "A persistent identifier or handle used to uniquely identify objects, standardized by the International Organization for Standardization (ISO)"@en ;
+	dct:source "http://www.doi.org/" ;
+  dc:creator "IGSN Technical Committee" ;
+  dc:contributor "Nicholas Car" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+:Handle a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Handle" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "the Handle System is a distributed computer system for assigning persistent identifiers, or handles, to information resources, and for resolving \"those handles into the information necessary to locate, access, and otherwise make use of the resources\""@en ;
+	dct:source "https://en.wikipedia.org/wiki/Handle_System" ;
+  dc:creator "IGSN Technical Committee" ;
+  dc:contributor "Nicholas Car" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+:IGSN a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "International GeoSample Number" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "The International Geo Sample Number or IGSN is a sample identification code of typically nine characters. As an active persistent identifier it can be resolved through the Handle System"@en ;
+	dct:source "https://en.wikipedia.org/wiki/International_Geo_Sample_Number" ;
+  dc:creator "IGSN Technical Committee" ;
+  dc:contributor "Nicholas Car" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+:ISBN a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "International Standard Book Number" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "The International Standard Book Number is a unique numeric commercial book identifier"@en ;
+	dct:source "https://en.wikipedia.org/wiki/International_Standard_Book_Number" ;
+  dc:creator "IGSN Technical Committee" ;
+  dc:contributor "Nicholas Car" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+:ISNI a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "International Standard Name Identifier" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "The International Standard Name Identifier is an identifier for uniquely identifying the public identities of contributors to media content such as books, television programmes, and newspaper articles. Such an identifier consists of 16 digits"@en ;
+	dct:source "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier" ;
+  dc:creator "IGSN Technical Committee" ;
+  dc:contributor "Nicholas Car" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+:ISSN a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "International Standard Serial Number" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "An International Standard Serial Number is an eight-digit serial number used to uniquely identify a serial publication. The ISSN is especially helpful in distinguishing between serials with the same title. ISSN are used in ordering, cataloging, interlibrary loans, and other practices in connection with serial literature"@en ;
+	dct:source "https://en.wikipedia.org/wiki/International_Standard_Serial_Number" ;
+  dc:creator "IGSN Technical Committee" ;
+  dc:contributor "Nicholas Car" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+:LSID a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Life Science Identifiers" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "Life Science Identifiers are a way to name and locate pieces of information on the web. Essentially, an LSID is a unique identifier for some data, and the LSID protocol specifies a standard way to locate the data. They are a little like DOIs used by many publishers"@en ;
+	dct:source "https://en.wikipedia.org/wiki/LSID" ;
+  dc:creator "IGSN Technical Committee" ;
+  dc:contributor "Nicholas Car" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+:ORCID a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Open Researcher and Contributor ID" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "ORCID is a nonproprietary alphanumeric code to uniquely identify scientific and other academic authors and contributors"@en ;
+	dct:source "https://en.wikipedia.org/wiki/ORCID" ;
+  dc:creator "IGSN Technical Committee" ;
+  dc:contributor "Nicholas Car" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+:PURL a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Persistent uniform resource locator" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "A persistent uniform resource locator (PURL) is a uniform resource locator (URL) (i.e., location-based uniform resource identifier or URI) that is used to redirect to the location of the requested web resource"@en ;
+	dct:source "https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator" ;
+  dc:creator "IGSN Technical Committee" ;
+  dc:contributor "Nicholas Car" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+:URI a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Uniform Resource Identifier" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "A compact sequence of characters that identifies an abstract or physical resource, formulated according to RFC 3986"@en ;
+	dct:source "https://tools.ietf.org/rfc/rfc3986" ;
+  dc:creator "IGSN Technical Committee" ;
+  dc:contributor "Nicholas Car" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+:URN a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Uniform Resource Name" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "Persistent, location-independent, resource identifiers, formulated according to RFC 2141"@en ;
+	dct:source "http://www.ietf.org/rfc/rfc2141" ;
+  dc:creator "IGSN Technical Committee" ;
+  dc:contributor "Nicholas Car" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+:VIAF a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Virtual International Authority File" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "The VIAFÂ® (Virtual International Authority File) combines multiple name authority files into a single OCLC-hosted name authority service"@en ;
+	dct:source "https://viaf.org/" ;
+  dc:creator "IGSN Technical Committee" ;
+  dc:contributor "Nicholas Car" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+.

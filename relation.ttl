@@ -1,0 +1,69 @@
+@prefix : <http://pid.geoscience.gov.au/def/voc/ga/igsn/relation/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+
+
+<http://pid.geoscience.gov.au/def/voc/ga/igsn/access> a skos:ConceptScheme ;
+  dct:title "IGSN Access Types"@en ;
+  dct:description """This vocabulary contains terms describing the ways in which physical samples may be retrieved by various groups of people, perhaps the sample custodians and other non custodians who wish to inspect them.
+
+If anyone may view the sample, the Access Type 'Public' should be used. If obtaining/viewing the sample is restricted, 'Private' should be used."""@en ;
+	dc:creator "Nicholas Car" ;
+	dct:created "2019-03-20"^^xsd:date ;
+	dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+	dct:description "A SKOS vocabulary version of the IGSN Access Type codelists."@en ;
+	dct:issued "2019-03-20"^^xsd:date ;
+	dct:issued "2019-03-20"^^xsd:date ;
+	dct:publisher <http://catalogue.linked.data.gov.au/org/O-000887> ;
+  dc:publisher "Geoscience Australia" ;
+	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/accessType.xsd> ;
+	owl:versionInfo "v1.0" ;
+  skos:historyNote "This vocabulary was extracted from a previous SKOS publication of the IGSN codelists at http://pid.geoscience.gov.au/def/voc/ga/igsncode to separate what that vocabulary had as multiple skos:Collections into individual vocabularies (skos:ConceptSchemes)." ;
+  skos:hasTopConcept :Private , :Public ;
+.
+
+:relationType a skos:ConceptScheme ;
+	rdfs:label "Relation type" ;
+	skos:member :Collection , :Feature , :Sample .
+
+:Feature a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Feature" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "A geographical feature of the earth that is eitehr man-made or naturally-created. Natural geographical features consist of landforms and ecosystems. For example, terrain types, physical factors of the environment are natural geographical features. Conversely, human settlements or other engineered forms are considered types of artificial geographical features."@en ;
+	dct:source "https://en.wikipedia.org/wiki/Geographical_feature" ;
+	dct:contributor "IGSN Technical Committee" .
+
+:Sample a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Sample" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "Sample - Feature which is intended to be representative of a FeatureOfInterest on which Observations may be made"@en ;
+	dct:source "https://www.w3.org/TR/vocab-ssn/#SOSASample" ;
+	dct:contributor "IGSN Technical Committee" .
+
+:resourceType a skos:ConceptScheme ;
+	rdfs:comment "High level categorization of the kind of resource, used as the type for an attribute of the resource root element. Note that the resource element also has a resourceTypes child element that is a sequence of resourceType elements defined as a union of the enumerations for featureType, sampleType and collectionType." ;
+	rdfs:label "Resource type" ;
+	skos:member :hasDocument , :hasEvent .
+
+:hasDocument a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "has document" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "The sample has a related document"@en ;
+	dct:source "Nicholas Car" ;
+	dct:contributor "IGSN Technical Committee" .
+
+:hasEvent a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "has event" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "The sample has a related event"@en ;
+	dct:source "Nicholas Car" ;
+	dct:contributor "IGSN Technical Committee" .

@@ -1,0 +1,80 @@
+@prefix : <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+
+
+<http://pid.geoscience.gov.au/def/voc/ga/igsn/access> a skos:ConceptScheme ;
+  dct:title "IGSN Access Types"@en ;
+  dct:description """This vocabulary contains terms describing the ways in which physical samples may be retrieved by various groups of people, perhaps the sample custodians and other non custodians who wish to inspect them.
+
+If anyone may view the sample, the Access Type 'Public' should be used. If obtaining/viewing the sample is restricted, 'Private' should be used."""@en ;
+	dc:creator "Nicholas Car" ;
+	dct:created "2019-03-20"^^xsd:date ;
+	dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+	dct:description "A SKOS vocabulary version of the IGSN Access Type codelists."@en ;
+	dct:issued "2019-03-20"^^xsd:date ;
+	dct:issued "2019-03-20"^^xsd:date ;
+	dct:publisher <http://catalogue.linked.data.gov.au/org/O-000887> ;
+  dc:publisher "Geoscience Australia" ;
+	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/accessType.xsd> ;
+	owl:versionInfo "v1.0" ;
+  skos:historyNote "This vocabulary was extracted from a previous SKOS publication of the IGSN codelists at http://pid.geoscience.gov.au/def/voc/ga/igsncode to separate what that vocabulary had as multiple skos:Collections into individual vocabularies (skos:ConceptSchemes)." ;
+  skos:hasTopConcept :Private , :Public ;
+.
+
+:geometryType a skos:ConceptScheme ;
+	rdfs:label "Geometry type" ;
+	skos:member :Unknown , :LineString , :MultiLineString , :MultiPoint , :MultiPolygon , :Point , :Polygon .
+
+:LineString a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Line string" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "A series of Point objects with assumed linear interpolation in between"@en ;
+	dct:source "Nicholas Car / GML" ;
+	dct:contributor "IGSN Technical Committee" .
+
+:MultiLineString a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Multi line string" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "Multiple LineStrings"@en ;
+	dct:source "Nicholas Car / GML" ;
+	dct:contributor "IGSN Technical Committee" .
+
+:MultiPoint a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Multi point" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "Multiple Points"@en ;
+	dct:source "Nicholas Car / GML" ;
+	dct:contributor "IGSN Technical Committee" .
+
+:MultiPolygon a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Multi polygon" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "Multiple Polygons"@en ;
+	dct:source "Nicholas Car / GML" ;
+	dct:contributor "IGSN Technical Committee" .
+
+:Point a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Point" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "A 0-dimensional geometric primitive, representing a position, as defined by the OGC's GML standard"@en ;
+	dct:source "Geographic Markup Language" ;
+	dct:contributor "IGSN Technical Committee" .
+
+:Polygon a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Polygon" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "A planar surface defined by 1 exterior boundary and 0 or more interior boundaries"@en ;
+	dct:source "Geographic Markup Language" ;
+	dct:contributor "IGSN Technical Committee" .

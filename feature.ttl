@@ -1,0 +1,277 @@
+@prefix : <http://pid.geoscience.gov.au/def/voc/ga/igsn/sampling-feature/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+
+
+<http://pid.geoscience.gov.au/def/voc/ga/igsn/access> a skos:ConceptScheme ;
+  dct:title "IGSN Feature Types"@en ;
+  dct:description """This vocabulary contains terms describing Sampling Features, that is devices used to extract Samples from Features of Interest""" ;
+  dct:created "2019-03-20"^^xsd:date ;
+  dct:issued "2019-03-20"^^xsd:date ;
+  dc:creator "IGSN Technical Committee" ;
+  dc:contributor "Nicholas Car" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+  dc:publisher "Geoscience Australia" ;
+  dct:publisher <http://catalogue.linked.data.gov.au/org/O-000887> ;
+  dct:source <https://github.com/IGSN/metadata/blob/master/description/include/accessType.xsd> ;
+  owl:versionInfo "v1.0" ;
+  skos:historyNote "This vocabulary was extracted from a previous SKOS publication of the IGSN codelists at http://pid.geoscience.gov.au/def/voc/ga/feature to separate what that vocabulary had as multiple skos:Collections into individual vocabularies (skos:ConceptSchemes)." ;
+  skos:hasTopConcept
+    <http://vocabulary.odm2.org/samplingfeaturetype/CTD> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/borehole> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/crossSection> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/depthInterval> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/excavation> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/fieldArea> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/flightline> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/interval> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/observationWell> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/profile> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/quadrat> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/scene> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/shipsTrack> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/site> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/soilPitSection> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/specimen> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/streamGage> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/trajectory> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/transect> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/traverse> ,
+    :Unknown ;
+    <http://vocabulary.odm2.org/samplingfeaturetype/waterQualityStation> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/weatherStation> ,
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/CTD> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "CTD" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A CTD (Conductivity, Temperature, and Depth) cast is a water column depth profile collected over a specific and relatively short date-time range, that can be considered as a parent specimen"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/CTD" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/borehole> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Borehole" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A narrow shaft bored into the ground, either vertically or horizontally. A borehole includes the hole cavity and walls surrounding that cavity"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/borehole" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/crossSection> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Cross section" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "The intersection of a body in three-dimensional space with a plane. Represented as a polygon"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/crossSection" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/depthInterval> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Depth interval" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A discrete segment along a longer vertical path, such as a borehole, soil profile or other depth profile, in which an observation or specimen is collected over the distance between the upper and lower depth limits of the interval. A Depth Interval is a sub-type of Interval"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/depthInterval" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/excavation> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Excavation" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "An artificially constructed cavity in the earth that is deeper than the soil, larger than a well bore, and substantially open to the atmosphere. The diameter of an excavation is typically similar or larger than the depth. Excavations include building-foundation diggings, roadway cuts, and surface mines"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/excavation" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/fieldArea> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Field area" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A location at which field experiments or observations of ambient conditions are conducted. A field area may contain many sites and has a geographical footprint that can be represented by a polygon"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/fieldArea" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/flightline> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Flight line" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A path along which an aircraft travels while measuring a phenomena of study"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/flightline" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/interval> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Interval" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A discrete segment along a longer path in which an observation or specimen is collected over the distance between the upper and lower bounds of the interval. A Depth Interval is a sub-type of Interval"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/interval" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/observationWell> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Observation well" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A hole or shaft constructed in the earth intended to be used to locate, sample, or develop groundwater, oil, gas, or some other subsurface material. The diameter of a well is typically much smaller than the depth. Wells are also used to artificially recharge groundwater or to pressurize oil and gas production zones. Specific kinds of wells should be specified in the SamplingFeature description. For example, underground waste-disposal wells should be classified as waste injection wells"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/observationWell" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/profile> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Profile" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A one-dimensional grid at fixed (x, y, t) coordinates within a four-dimensional (x, y, z, t) coordinate reference system. The grid axis is aligned with the coordinate reference system z-axis. Typically used to characterize or measure phenomena as a function of depth"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/profile" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/quadrat> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Quadrat" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A small plot used to isolate a standard unit of area for study of the distribution of an item over a large area"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/quadrat" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/scene> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Scene" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A two-dimensional visual extent within a physical environment"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/scene" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/shipsTrack> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Ships track" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A path along which a ship or vessel travels while measuring a phenomena of study. Represented as a line connecting the ship's consecutive positions on the surface of the earth"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/shipsTrack" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/site> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Site" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A facility or location at which observations have been collected. A site may have instruments or equipment installed and may contain multiple other sampling features (e.g., a stream gage, weather station, observation well, etc.). Additionally, many specimen sampling features may be collected at a site. Sites are also often referred to as stations. A site is represented as a point, but it may have a geographical footprint that is not a point. The site coordinates serve as a reference for the site and offsets may be specified from this reference location"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/site" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/soilPitSection> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Soil pit section" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "Two-dimensional vertical face of a soil pit that is described and sampled"@en ;
+	dct:source "ttp://vocabulary.odm2.org/samplingfeaturetype/soilPitSection" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/specimen> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Specimen" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A physical sample (object or entity) obtained for observations, typically performed ex situ, often in a laboratory"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/specimen" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/streamGage> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Stream gage" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A location used to monitor and test terrestrial bodies of water. Hydrometric measurements of water level, surface elevation (\"stage\") and/or volumetric discharge (flow) are generally taken, and observations of biota and water quality may also be made"@en ;
+	dct:source "ttp://vocabulary.odm2.org/samplingfeaturetype/streamGage" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/trajectory> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Trajectory" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "The path that a moving object follows through space as a function of time. A trajectory can be described by the geometry of the path or as the position of the object over time"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/trajectory" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/transect> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Transect" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A path along which ocurrences of a phenomena of study are counted or measured"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/transect" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/traverse> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Traverse" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A field control network consisting of survey stations placed along a line or path of travel"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/traverse" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+:Unknown a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsn/feature> ;
+	skos:prefLabel "Unknown" ;
+  skos:definition "The Feature Type is not known"@en ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/feature> ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/waterQualityStation> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Water quality station" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A location used to monitor and test the quality of terrestrial bodies of water. Water quality stations may be locations at which physical water samples are collected for ex situ analysis. Water qulaity stations may also have instruments and equipment for continuous, in situ measurement of water quality variables"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/waterQualityStation" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+<http://vocabulary.odm2.org/samplingfeaturetype/weatherStation> a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:prefLabel "Weather station" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/feature> ;
+	skos:definition "A facility, either on land or sea, with instruments and equipment for measuring atmospheric conditions to provide information for weather forecasts and to study weather and climate"@en ;
+	dct:source "http://vocabulary.odm2.org/samplingfeaturetype/weatherStation" ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.

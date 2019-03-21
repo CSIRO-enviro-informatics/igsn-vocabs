@@ -1,4 +1,4 @@
-@prefix : <http://pid.geoscience.gov.au/def/voc/ga/igsn/access/> .
+@prefix : <http://pid.geoscience.gov.au/def/voc/ga/igsn/registration/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -8,49 +8,36 @@
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
 
 
-<http://pid.geoscience.gov.au/def/voc/ga/igsn/access> a skos:ConceptScheme ;
-  dct:title "IGSN Access Types"@en ;
+<http://pid.geoscience.gov.au/def/voc/ga/igsn/registration> a skos:ConceptScheme ;
+  dct:title "IGSN Registration Types"@en ;
   dct:description """This vocabulary contains terms describing the ways in which physical samples may be retrieved by various groups of people, perhaps the sample custodians and other non custodians who wish to inspect them.
 
 If anyone may view the sample, the Access Type 'Public' should be used. If obtaining/viewing the sample is restricted, 'Private' should be used."""@en ;
-  dct:created "2019-03-20"^^xsd:date ;
-  dct:issued "2019-03-20"^^xsd:date ;
-	dc:creator "IGSN Technical Committee" ;
-  dc:contributor "Nicholas Car" ;
-	dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+	dc:creator "Nicholas Car" ;
+	dct:created "2019-03-20"^^xsd:date ;
+	dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+	dct:description "A SKOS vocabulary version of the IGSN Access Type codelists."@en ;
+	dct:issued "2019-03-20"^^xsd:date ;
+	dct:issued "2019-03-20"^^xsd:date ;
+	dct:publisher <http://catalogue.linked.data.gov.au/org/O-000887> ;
   dc:publisher "Geoscience Australia" ;
-  dct:publisher <http://catalogue.linked.data.gov.au/org/O-000887> ;
 	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/accessType.xsd> ;
 	owl:versionInfo "v1.0" ;
   skos:historyNote "This vocabulary was extracted from a previous SKOS publication of the IGSN codelists at http://pid.geoscience.gov.au/def/voc/ga/igsncode to separate what that vocabulary had as multiple skos:Collections into individual vocabularies (skos:ConceptSchemes)." ;
-  skos:hasTopConcept
-    :Private ,
-    :Public ,
-    :Unknown ;
+  skos:hasTopConcept :Private , :Public ;
 .
 
-:private a skos:Concept ;
+<http://schema.igsn.org/vocab/PhysicalSample> a skos:Concept ;
 	skos:prefLabel "Private" ;
 	skos:definition "Not to be accessed outside the hosting institution"@en ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsn/access> ;
   skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/access> ;
 	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/accessType.xsd> ;
+	dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
-:public a skos:Concept ;
-	skos:prefLabel "Public" ;
-	skos:definition "Accessible to the general public"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/access> ;
-	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/accessType.xsd> ;
-  dc:contributor "Nicholas Car" ;
-  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-.
+<http://schema.igsn.org/vocab/SampleCollection>
 
-:Unknown a skos:Concept ;
-	skos:prefLabel "Unknown" ;
-  skos:definition "The Access Type is not known"@en ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/access> ;
-  dc:creator "Nicholas Car" ;
-  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
-.
+<http://schema.igsn.org/vocab/SamplingFeature>

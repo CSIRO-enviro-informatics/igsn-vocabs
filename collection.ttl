@@ -1,0 +1,44 @@
+@prefix : <http://pid.geoscience.gov.au/def/voc/ga/igsn/collection/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+
+
+<http://pid.geoscience.gov.au/def/voc/ga/igsn/collection> a skos:ConceptScheme ;
+  dct:title "IGSN Collection Types"@en ;
+  dct:description """This vocabulary contains terms describing sets of things"""@en ;
+  dct:created "2019-03-20"^^xsd:date ;
+  dct:issued "2019-03-20"^^xsd:date ;
+	dc:creator "IGSN Technical Committee" ;
+  dc:contributor "Nicholas Car" ;
+	dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+  dc:publisher "Geoscience Australia" ;
+  dct:publisher <http://catalogue.linked.data.gov.au/org/O-000887> ;
+	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/accessType.xsd> ;
+	owl:versionInfo "v1.0" ;
+  skos:historyNote "This vocabulary was extracted from a previous SKOS publication of the IGSN codelists at http://pid.geoscience.gov.au/def/voc/ga/igsncode to separate what that vocabulary had as multiple skos:Collections into individual vocabularies (skos:ConceptSchemes)." ;
+  skos:hasTopConcept
+    :Collection ,
+    :Unknown ;
+.
+
+:Collection a skos:Concept ;
+	skos:prefLabel "Collection" ;
+  skos:definition "A set of things"@en ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/collection> ;
+	dct:creator "IGSN Technical Committee" ;
+	dct:contributor "Nicholas Car" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+.
+
+:Unknown a skos:Concept ;
+	skos:prefLabel "Unknown" ;
+  skos:definition "The Collection Type is not known"@en ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/collection> ;
+  dc:creator "Nicholas Car" ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+.
