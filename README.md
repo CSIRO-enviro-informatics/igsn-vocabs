@@ -19,3 +19,9 @@ There is a single vocabulary (a single skos:ConceptScheme) per RDF (turtle) file
 
 ## Supporting material
 Some supporting information is contained in the [extras/](extras/) folder, such as a copy of the original Geoscience Australia SKOS version of these vocabularies.
+
+## Contacts
+*author*:  
+**Nicholas Car**  
+CSIRO Land & Water, Environmental Informatics Group  
+<nicholas.car@csiro.au>

@@ -38,6 +38,30 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
-<http://schema.igsn.org/vocab/SampleCollection>
+:registrationType a skos:ConceptScheme ;
+	rdfs:label "Registration type" ;
+	skos:member :PhysicalSample , :SampleCollection , :SamplingFeature .
 
-<http://schema.igsn.org/vocab/SamplingFeature>
+:PhysicalSample a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Physical sample" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "A physical sample of a feature of interest, as opposed to a digital one (such as a satellite image or other photo). Physical samples are sometimes known as 'specimens'."@en ;
+	dct:source "Nicholas Car" ;
+	dct:contributor "IGSN Technical Committee" .
+
+:SampleCollection a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Sample collection" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "A set of things"@en ;
+	dct:source "Nicholas Car" ;
+	dct:contributor "IGSN Technical Committee" .
+
+:SamplingFeature a skos:Concept ;
+	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:prefLabel "Sampleing feature" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:definition "A thing which links the sampling device (sensor) to the real-world feature of interest (such as lithosphere, tissue, waterbody). Could be a station,  transect, section"@en ;
+	dct:source "Nicholas Car" ;
+	dct:contributor "IGSN Technical Committee" .
