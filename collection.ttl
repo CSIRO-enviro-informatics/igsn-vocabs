@@ -1,5 +1,5 @@
 @prefix : <http://pid.geoscience.gov.au/def/voc/ga/igsn/collection/> .
-@prefix collection: <http://pid.geoscience.gov.au/def/voc/ga/igsn/collection/> .
+@prefix collection: <http://pid.geoscience.gov.au/def/voc/ga/igsn/collection> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -9,7 +9,7 @@
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
 
 
-:collection a skos:ConceptScheme ;
+collection: a skos:ConceptScheme ;
   dct:title "IGSN Collection Types"@en ;
   dct:description """This vocabulary contains terms describing sets of things"""@en ;
   dct:created "2019-03-20"^^xsd:date ;
@@ -30,7 +30,7 @@
 :Collection a skos:Concept ;
 	skos:prefLabel "Collection" ;
   skos:definition "A set of things"@en ;
-	skos:topConceptOf :collection ;
+	skos:topConceptOf collection: ;
 	dct:creator "IGSN Technical Committee" ;
 	dct:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -39,5 +39,5 @@
 <http://www.opengis.net/def/nil/OGC/0/unknown> a skos:Concept ;
 	skos:prefLabel "Unknown" ;
   skos:definition "The correct value is not known to, or not computable by, the sender of this data. However, the correct value probably exists"@en ;
-	skos:topConceptOf :collection ;
+	skos:topConceptOf collection: ;
 .
