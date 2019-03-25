@@ -42,9 +42,9 @@
     <http://vocabulary.odm2.org/samplingfeaturetype/trajectory> ,
     <http://vocabulary.odm2.org/samplingfeaturetype/transect> ,
     <http://vocabulary.odm2.org/samplingfeaturetype/traverse> ,
-    :Unknown ;
+    :Unknown ,
     <http://vocabulary.odm2.org/samplingfeaturetype/waterQualityStation> ,
-    <http://vocabulary.odm2.org/samplingfeaturetype/weatherStation> ,
+    <http://vocabulary.odm2.org/samplingfeaturetype/weatherStation> ;
 .
 
 <http://vocabulary.odm2.org/samplingfeaturetype/CTD> a skos:Concept ;
