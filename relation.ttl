@@ -1,4 +1,5 @@
 @prefix : <http://pid.geoscience.gov.au/def/voc/ga/igsn/relation/> .
+@prefix relation: <http://pid.geoscience.gov.au/def/voc/ga/igsn/relation> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -24,12 +25,11 @@
   skos:hasTopConcept
     :hasDocument ,
     :hasEvent ,
-    :Unknown ;
+    <http://www.opengis.net/def/nil/OGC/0/unknown> ;
   .
 
 :hasDocument a skos:Concept ;
 	skos:prefLabel "has document" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/relation> ;
 	skos:definition "The sample has a related document"@en ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
@@ -38,17 +38,15 @@
 
 :hasEvent a skos:Concept ;
 	skos:prefLabel "has event" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/relation> ;
 	skos:definition "The sample has a related event"@en ;
+	skos:topConceptOf relation: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
-:Unknown a skos:Concept ;
+<http://www.opengis.net/def/nil/OGC/0/unknown> a skos:Concept ;
 	skos:prefLabel "Unknown" ;
-  skos:definition "The Collection Type is not known"@en ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/relation> ;
-  dc:creator "Nicholas Car" ;
-  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+  skos:definition "The correct value is not known to, or not computable by, the sender of this data. However, the correct value probably exists"@en ;
+	skos:topConceptOf relation: ;
 .

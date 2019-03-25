@@ -1,4 +1,6 @@
 @prefix : <http://pid.geoscience.gov.au/def/voc/ga/igsn/material/> .
+@prefix material: <http://pid.geoscience.gov.au/def/voc/ga/igsn/material> .
+@prefix medium: <http://vocabulary.odm2.org/medium/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -8,7 +10,7 @@
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
 
 
-<http://pid.geoscience.gov.au/def/voc/ga/igsn/access> a skos:ConceptScheme ;
+material: a skos:ConceptScheme ;
   dct:title "IGSN Access Types"@en ;
   dct:description """This vocabulary contains terms describing the ways in which physical samples may be retrieved by various groups of people, perhaps the sample custodians and other non custodians who wish to inspect them.
 
@@ -24,124 +26,109 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
   owl:versionInfo "v1.0" ;
   skos:historyNote "This vocabulary was extracted from a previous SKOS publication of the IGSN codelists at http://pid.geoscience.gov.au/def/voc/ga/igsncode to separate what that vocabulary had as multiple skos:Collections into individual vocabularies (skos:ConceptSchemes)." ;
   skos:hasTopConcept
-    <http://vocabulary.odm2.org/medium/air> ,
-    <http://vocabulary.odm2.org/medium/gas> ,
-    <http://vocabulary.odm2.org/medium/ice> ,
-    <http://vocabulary.odm2.org/medium/liquidAqueous> ,
-    <http://vocabulary.odm2.org/medium/liquidOrganic> ,
-    <http://vocabulary.odm2.org/medium/mineral> ,
-    <http://vocabulary.odm2.org/medium/organism> ,
-    <http://vocabulary.odm2.org/medium/other> ,
-    <http://vocabulary.odm2.org/medium/particulate> ,
-    <http://vocabulary.odm2.org/medium/rock> ,
-    <http://vocabulary.odm2.org/medium/sediment> ,
-    <http://vocabulary.odm2.org/medium/snow> ,
-    <http://vocabulary.odm2.org/medium/soil> ,
-    <http://vocabulary.odm2.org/medium/tissue> ,
-    <http://vocabulary.odm2.org/medium/unknown> ;
+    medium:air ,
+    medium:gas ,
+    medium:ice ,
+    medium:liquidAqueous ,
+    medium:liquidOrganic ,
+    medium:mineral ,
+    medium:organism ,
+    medium:other ,
+    medium:particulate ,
+    medium:rock ,
+    medium:sediment ,
+    medium:snow ,
+    medium:soil ,
+    medium:tissue ,
+    medium:unknown ;
 .
 
-<http://vocabulary.odm2.org/medium/air> a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+medium:air a skos:Concept ;
 	skos:prefLabel "Air" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
 	skos:definition "Specimen collection of ambient air or sensor emplaced to measure properties of ambient air"@en ;
+	skos:topConceptOf material: ;
 .
 
-<http://vocabulary.odm2.org/medium/gas> a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+medium:gas a skos:Concept ;
 	skos:prefLabel "Gas" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
 	skos:definition "Gas phase specimen or sensor emplaced to measure properties of a gas"@en ;
+	skos:topConceptOf material: ;
 .
 
-<http://vocabulary.odm2.org/medium/ice> a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+medium:ice a skos:Concept ;
 	skos:prefLabel "Ice" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
 	skos:definition "Sample collected as frozen water or sensor emplaced to measure properties of ice"@en ;
+	skos:topConceptOf material: ;
 .
 
-<http://vocabulary.odm2.org/medium/liquidAqueous> a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+medium:liquidAqueous a skos:Concept ;
 	skos:prefLabel "Liquid aqueous" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
 	skos:definition "Specimen collected as liquid water or sensor emplaced to measure properties of water in sampled environment"@en ;
+	skos:topConceptOf material: ;
 .
 
-<http://vocabulary.odm2.org/medium/liquidOrganic> a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+medium:liquidOrganic a skos:Concept ;
 	skos:prefLabel "Liquid organic" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
 	skos:definition "Specimen collected as an organic liquid"@en ;
+	skos:topConceptOf material: ;
 .
 
-<http://vocabulary.odm2.org/medium/mineral> a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+medium:mineral a skos:Concept ;
 	skos:prefLabel "Mineral" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
 	skos:definition "Specimen collected as a mineral"@en ;
+	skos:topConceptOf material: ;
 .
 
-<http://vocabulary.odm2.org/medium/organism> a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+medium:organism a skos:Concept ;
 	skos:prefLabel "Organism" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
 	skos:definition "Data collected about a species at organism level"@en ;
+	skos:topConceptOf material: ;
 .
 
-<http://vocabulary.odm2.org/medium/other> a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+medium:other a skos:Concept ;
 	skos:prefLabel "Other" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
 	skos:definition "Other"@en ;
+	skos:topConceptOf material: ;
 .
 
-<http://vocabulary.odm2.org/medium/particulate> a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+medium:particulate a skos:Concept ;
 	skos:prefLabel "Particulate" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
 	skos:definition "Specimen collected from particulates suspended in a paticulate-fluid mixture. Examples include particulates in water or air"@en ;
+	skos:topConceptOf material: ;
 .
 
-<http://vocabulary.odm2.org/medium/rock> a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+medium:rock a skos:Concept ;
 	skos:prefLabel "Rock" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
 	skos:definition "Specimen collected from a naturally occuring solid aggregate of one or more minerals"@en ;
+	skos:topConceptOf material: ;
 .
 
-<http://vocabulary.odm2.org/medium/sediment> a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+medium:sediment a skos:Concept ;
 	skos:prefLabel "Sediment" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
 	skos:definition "Specimen collected from material broken down by processes of weathering and erosion and subsequently transported by the action of wind, water, or ice, and/or by the force of gravity acting on the particles. Sensors may also be emplaced to measure sediment properties"@en ;
+	skos:topConceptOf material: ;
 .
 
-<http://vocabulary.odm2.org/medium/snow> a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+medium:snow a skos:Concept ;
 	skos:prefLabel "Snow" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
 	skos:definition "Observation in, of or sample taken from snow"@en ;
+	skos:topConceptOf material: ;
 .
 
-<http://vocabulary.odm2.org/medium/soil> a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+medium:soil a skos:Concept ;
 	skos:prefLabel "Soil" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
 	skos:definition "Specimen collected from soil or sensor emplaced to measure properties of soil. Soil includes the mixture of minerals, organic matter, gasses, liquids, and organisms that make up the upper layer of earth in which plants grow"@en ;
+	skos:topConceptOf material: ;
 .
 
-<http://vocabulary.odm2.org/medium/tissue> a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+medium:tissue a skos:Concept ;
 	skos:prefLabel "Tissue" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
 	skos:definition "Sample of a living organism's tissue or sensor emplaced to measure property of tissue"@en ;
+	skos:topConceptOf material: ;
 .
 
-<http://vocabulary.odm2.org/medium/unknown> a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+medium:unknown a skos:Concept ;
 	skos:prefLabel "Unknown" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
 	skos:definition "The sampled medium is unknown"@en ;
+	skos:topConceptOf material: ;
 .

@@ -1,4 +1,5 @@
 @prefix : <http://pid.geoscience.gov.au/def/voc/ga/igsn/collection/> .
+@prefix collection: <http://pid.geoscience.gov.au/def/voc/ga/igsn/collection/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -8,7 +9,7 @@
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
 
 
-<http://pid.geoscience.gov.au/def/voc/ga/igsn/collection> a skos:ConceptScheme ;
+:collection a skos:ConceptScheme ;
   dct:title "IGSN Collection Types"@en ;
   dct:description """This vocabulary contains terms describing sets of things"""@en ;
   dct:created "2019-03-20"^^xsd:date ;
@@ -23,22 +24,20 @@
   skos:historyNote "This vocabulary was extracted from a previous SKOS publication of the IGSN codelists at http://pid.geoscience.gov.au/def/voc/ga/igsncode to separate what that vocabulary had as multiple skos:Collections into individual vocabularies (skos:ConceptSchemes)." ;
   skos:hasTopConcept
     :Collection ,
-    :Unknown ;
+    <http://www.opengis.net/def/nil/OGC/0/unknown> ;
 .
 
 :Collection a skos:Concept ;
 	skos:prefLabel "Collection" ;
   skos:definition "A set of things"@en ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/collection> ;
+	skos:topConceptOf :collection ;
 	dct:creator "IGSN Technical Committee" ;
 	dct:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
-:Unknown a skos:Concept ;
+<http://www.opengis.net/def/nil/OGC/0/unknown> a skos:Concept ;
 	skos:prefLabel "Unknown" ;
-  skos:definition "The Collection Type is not known"@en ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/collection> ;
-  dc:creator "Nicholas Car" ;
-  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+  skos:definition "The correct value is not known to, or not computable by, the sender of this data. However, the correct value probably exists"@en ;
+	skos:topConceptOf :collection ;
 .

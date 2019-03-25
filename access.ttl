@@ -1,4 +1,5 @@
 @prefix : <http://pid.geoscience.gov.au/def/voc/ga/igsn/access/> .
+@prefix access: <http://pid.geoscience.gov.au/def/voc/ga/igsn/access> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -8,7 +9,7 @@
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
 
 
-<http://pid.geoscience.gov.au/def/voc/ga/igsn/access> a skos:ConceptScheme ;
+access: a skos:ConceptScheme ;
   dct:title "IGSN Access Types"@en ;
   dct:description """This vocabulary contains terms describing the ways in which physical samples may be retrieved by various groups of people, perhaps the sample custodians and other non custodians who wish to inspect them.
 
@@ -26,13 +27,13 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
   skos:hasTopConcept
     :Private ,
     :Public ,
-    :Unknown ;
+    <http://www.opengis.net/def/nil/OGC/0/unknown> ;
 .
 
 :private a skos:Concept ;
 	skos:prefLabel "Private" ;
 	skos:definition "Not to be accessed outside the hosting institution"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/access> ;
+  skos:topConceptOf access: ;
 	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/accessType.xsd> ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -41,16 +42,14 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 :public a skos:Concept ;
 	skos:prefLabel "Public" ;
 	skos:definition "Accessible to the general public"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/access> ;
+  skos:topConceptOf access: ;
 	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/accessType.xsd> ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
-:Unknown a skos:Concept ;
+<http://www.opengis.net/def/nil/OGC/0/unknown> a skos:Concept ;
 	skos:prefLabel "Unknown" ;
-  skos:definition "The Access Type is not known"@en ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/access> ;
-  dc:creator "Nicholas Car" ;
-  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+  skos:definition "The correct value is not known to, or not computable by, the sender of this data. However, the correct value probably exists"@en ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/collection> ;
 .

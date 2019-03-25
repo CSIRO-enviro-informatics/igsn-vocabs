@@ -1,4 +1,5 @@
 @prefix : <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor/> .
+@prefix contributor: <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -8,7 +9,7 @@
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
 
 
-<http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> a skos:ConceptScheme ;
+contributor: a skos:ConceptScheme ;
   dct:title "IGSN Contributor Types"@en ;
   dct:description """This vocabulary contains terms describing sets of things"""@en ;
   dct:created "2019-03-20"^^xsd:date ;
@@ -37,14 +38,14 @@
     :RightsHolder ,
     :Sponsor ,
     :Supervisor ,
-    :Unknown ,
-    :WorkPackageLeader ;
+    :WorkPackageLeader ,
+    <http://www.opengis.net/def/nil/OGC/0/unknown> ;
 .
 
 :ContactPerson a skos:Concept ;
 	skos:prefLabel "Contact person" ;
 	skos:definition "the individual or organization who is responsible for the initial triage of and answering questions related to the resource"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> ;
+  skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -53,7 +54,7 @@
 :Distributor a skos:Concept ;
 	skos:prefLabel "Distributor" ;
 	skos:definition "A person or organization that is responsible for providing required access to the data"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> ;
+  skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -62,7 +63,7 @@
 :Editor a skos:Concept ;
 	skos:prefLabel "Editor" ;
   skos:defintion "A person in overall charge of the editing" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> ;
+	skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -71,7 +72,7 @@
 :Funder a skos:Concept ;
 	skos:prefLabel "Funder" ;
 	skos:definition "An individual or organization which has provided all or part of the finances associated with the resource"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> ;
+  skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -80,7 +81,7 @@
 :HostingInstitution a skos:Concept ;
 	skos:prefLabel "Hosting institution" ;
 	skos:definition "The institution that hosts the physical sample"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> ;
+  skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -89,7 +90,7 @@
 :Other a skos:Concept ;
 	skos:prefLabel "Other" ;
 	skos:definition "The value is one other than those in the selectable list. It is not unknown"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> ;
+  skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -98,7 +99,7 @@
 :ProjectLeader a skos:Concept ;
 	skos:prefLabel "Project leader" ;
 	skos:definition "A person who lead a project"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> ;
+  skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -107,7 +108,7 @@
 :ProjectManager a skos:Concept ;
 	skos:prefLabel "Project manager" ;
 	skos:definition "A person who managed a project"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> ;
+  skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -116,7 +117,7 @@
 :ProjectMember a skos:Concept ;
 	skos:prefLabel "Project member" ;
 	skos:definition "A member of a project team"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> ;
+  skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -125,7 +126,7 @@
 :RelatedPerson a skos:Concept ;
 	skos:prefLabel "Related person" ;
 	skos:definition "A person related to an object of interest (a sample), possibly in an unknonwn way"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> ;
+  skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -134,7 +135,7 @@
 :ResearchGroup a skos:Concept ;
 	skos:prefLabel "Research group" ;
 	skos:definition "A group conducting research"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> ;
+  skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -143,7 +144,7 @@
 :Researcher a skos:Concept ;
 	skos:prefLabel "Researcher" ;
 	skos:definition "A person undertaking research"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> ;
+  skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -152,7 +153,7 @@
 :RightsHolder a skos:Concept ;
 	skos:prefLabel "Rights holder" ;
 	skos:definition "A person or organisation holding rights to an object of interest (a sample)"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> ;
+  skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -161,7 +162,7 @@
 :Sponsor a skos:Concept ;
 	skos:prefLabel "Sponsor" ;
 	skos:definition "The individual or organization who is providing sponsorship for the resource"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> ;
+  skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
@@ -170,24 +171,22 @@
 :Supervisor a skos:Concept ;
 	skos:prefLabel "Supervisor" ;
 	skos:definition "A person who guides"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> ;
+  skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
-:Unknown a skos:Concept ;
+<http://www.opengis.net/def/nil/OGC/0/unknown> a skos:Concept ;
 	skos:prefLabel "Unknown" ;
-  skos:definition "The Contributor Type is not known"@en ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> ;
-  dc:creator "Nicholas Car" ;
-  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+  skos:definition "The correct value is not known to, or not computable by, the sender of this data. However, the correct value probably exists"@en ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/collection> ;
 .
 
 :WorkPackageLeader a skos:Concept ;
 	skos:prefLabel "Work package leader" ;
 	skos:definition "A leader of a package of work"@en ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/contributor> ;
+  skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;

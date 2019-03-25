@@ -1,4 +1,5 @@
 @prefix : <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry/> .
+@prefix geometry: <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -28,62 +29,53 @@
     :MultiPolygon ,
     :Point ,
     :Polygon ,
-    :Unknown ;
+    <http://www.opengis.net/def/nil/OGC/0/unknown> ;
 .
 
 :LineString a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry> ;
 	skos:prefLabel "Line string" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry> ;
 	skos:definition "A series of Point objects with assumed linear interpolation in between"@en ;
+	skos:topConceptOf geometry: ;
 	dct:source "Nicholas Car / GML" ;
-	dct:contributor "IGSN Technical Committee" .
+.
 
 :MultiLineString a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry> ;
 	skos:prefLabel "Multi line string" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry> ;
 	skos:definition "Multiple LineStrings"@en ;
+  skos:topConceptOf geometry: ;
 	dct:source "Nicholas Car / GML" ;
-	dct:contributor "IGSN Technical Committee" .
+.
 
 :MultiPoint a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry> ;
 	skos:prefLabel "Multi point" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry> ;
 	skos:definition "Multiple Points"@en ;
+  skos:topConceptOf geometry: ;
 	dct:source "Nicholas Car / GML" ;
-	dct:contributor "IGSN Technical Committee" .
+.
 
 :MultiPolygon a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry> ;
 	skos:prefLabel "Multi polygon" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry> ;
 	skos:definition "Multiple Polygons"@en ;
+  skos:topConceptOf geometry: ;
 	dct:source "Nicholas Car / GML" ;
-	dct:contributor "IGSN Technical Committee" .
+.
 
 :Point a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry> ;
 	skos:prefLabel "Point" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry> ;
 	skos:definition "A 0-dimensional geometric primitive, representing a position, as defined by the OGC's GML standard"@en ;
+  skos:topConceptOf geometry: ;
 	dct:source "Geographic Markup Language" ;
-	dct:contributor "IGSN Technical Committee" .
+.
 
 :Polygon a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry> ;
 	skos:prefLabel "Polygon" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry> ;
 	skos:definition "A planar surface defined by 1 exterior boundary and 0 or more interior boundaries"@en ;
+  skos:topConceptOf geometry: ;
 	dct:source "Geographic Markup Language" ;
-	dct:contributor "IGSN Technical Committee" .
+.
 
-:Unknown a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry> ;
+<http://www.opengis.net/def/nil/OGC/0/unknown> a skos:Concept ;
 	skos:prefLabel "Unknown" ;
-  skos:definition "The Geometry Type is not known"@en ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry> ;
-  dc:creator "Nicholas Car" ;
-  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+  skos:definition "The correct value is not known to, or not computable by, the sender of this data. However, the correct value probably exists"@en ;
+	skos:topConceptOf geometry: ;
 .

@@ -1,4 +1,5 @@
-@prefix : <http://pid.geoscience.gov.au/def/voc/ga/igsn/relation/> .
+@prefix : <http://pid.geoscience.gov.au/def/voc/ga/igsn/resource/> .
+@prefix resource: <http://pid.geoscience.gov.au/def/voc/ga/igsn/resource> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -25,23 +26,22 @@
     :Collection ,
     :Feature ,
     :Sample ,
-    :Unknown
+    <http://www.opengis.net/def/nil/OGC/0/unknown> ;
   .
 
 :Collection a skos:Concept ;
 	skos:prefLabel "Collection" ;
   skos:definition "A set of things"@en ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/resource> ;
+	skos:topConceptOf resource: ;
 	dct:creator "IGSN Technical Committee" ;
 	dct:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :Feature a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsn/resource> ;
 	skos:prefLabel "Feature" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/resource> ;
 	skos:definition "A geographical feature of the earth that is eitehr man-made or naturally-created. Natural geographical features consist of landforms and ecosystems. For example, terrain types, physical factors of the environment are natural geographical features. Conversely, human settlements or other engineered forms are considered types of artificial geographical features."@en ;
+  skos:topConceptOf resource: ;
 	dct:source <https://en.wikipedia.org/wiki/Geographical_feature> ;
   dct:creator "IGSN Technical Committee" ;
   dct:contributor "Nicholas Car" ;
@@ -49,20 +49,17 @@
 .
 
 :Sample a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsn/resource> ;
 	skos:prefLabel "Sample" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/resource> ;
 	skos:definition "Sample - Feature which is intended to be representative of a FeatureOfInterest on which Observations may be made"@en ;
+  skos:topConceptOf resource: ;
 	dct:source <https://www.w3.org/TR/vocab-ssn/#SOSASample> ;
   dct:creator "IGSN Technical Committee" ;
   dct:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
-:Unknown a skos:Concept ;
+<http://www.opengis.net/def/nil/OGC/0/unknown> a skos:Concept ;
 	skos:prefLabel "Unknown" ;
-  skos:definition "The Resource Type is not known"@en ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/resource> ;
-  dc:creator "Nicholas Car" ;
-  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+  skos:definition "The correct value is not known to, or not computable by, the sender of this data. However, the correct value probably exists"@en ;
+	skos:topConceptOf resource: ;
 .

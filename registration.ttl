@@ -1,4 +1,5 @@
 @prefix : <http://pid.geoscience.gov.au/def/voc/ga/igsn/registration/> .
+@prefix registration: <http://pid.geoscience.gov.au/def/voc/ga/igsn/registration> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -29,7 +30,7 @@
 
 :PhysicalSample a skos:Concept ;
 	skos:prefLabel "Physical sample" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/registration> ;
+	skos:topConceptOf registration: ;
 	skos:definition "A physical sample of a feature of interest, as opposed to a digital one (such as a satellite image or other photo). Physical samples are sometimes known as 'specimens'."@en ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
@@ -38,7 +39,7 @@
 
 :SampleCollection a skos:Concept ;
 	skos:prefLabel "Sample collection" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/registration> ;
+	skos:topConceptOf registration: ;
 	skos:definition "A set of things"@en ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
@@ -47,7 +48,7 @@
 
 :SamplingFeature a skos:Concept ;
 	skos:prefLabel "Sampleing feature" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/registration> ;
+	skos:topConceptOf registration: ;
 	skos:definition "A thing which links the sampling device (sensor) to the real-world feature of interest (such as lithosphere, tissue, waterbody). Could be a station,  transect, section"@en ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
