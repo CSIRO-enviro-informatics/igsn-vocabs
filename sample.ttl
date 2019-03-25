@@ -8,28 +8,21 @@
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
 
 
-<http://pid.geoscience.gov.au/def/voc/ga/igsn/access> a skos:ConceptScheme ;
-  dct:title "IGSN Access Types"@en ;
-  dct:description """This vocabulary contains terms describing the ways in which physical samples may be retrieved by various groups of people, perhaps the sample custodians and other non custodians who wish to inspect them.
-
-If anyone may view the sample, the Access Type 'Public' should be used. If obtaining/viewing the sample is restricted, 'Private' should be used."""@en ;
+<http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> a skos:ConceptScheme ;
+  dct:title "IGSN Sample Types"@en ;
+  dct:description """This vocabulary contains terms describing the types of sample at the highest level"""@en ;
 	dc:creator "Nicholas Car" ;
 	dct:created "2019-03-20"^^xsd:date ;
 	dct:creator <http://orcid.org/0000-0002-8742-7730> ;
-	dct:description "A SKOS vocabulary version of the IGSN Access Type codelists."@en ;
 	dct:issued "2019-03-20"^^xsd:date ;
 	dct:issued "2019-03-20"^^xsd:date ;
 	dct:publisher <http://catalogue.linked.data.gov.au/org/O-000887> ;
   dc:publisher "Geoscience Australia" ;
-	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/accessType.xsd> ;
+	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/sampleType.xsd> ;
 	owl:versionInfo "v1.0" ;
   skos:historyNote "This vocabulary was extracted from a previous SKOS publication of the IGSN codelists at http://pid.geoscience.gov.au/def/voc/ga/igsncode to separate what that vocabulary had as multiple skos:Collections into individual vocabularies (skos:ConceptSchemes)." ;
-  skos:hasTopConcept :Private , :Public ;
-.
-
-:sampleType a skos:ConceptScheme ;
-	rdfs:label "Sample type" ;
-	skos:hasTopConcept
+  skos:usageNote "This vocabulary is obviously predicated on geo- and some forms of bio- samples and isn't appropriate for categorisations of sample types in general"
+  skos:hasTopConcept
 		<http://vocabulary.odm2.org/specimentype/automated> ,
 		<http://vocabulary.odm2.org/specimentype/core> ,
 		<http://vocabulary.odm2.org/specimentype/coreHalfRound> ,
@@ -63,7 +56,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Automated" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Sample collected using an automated sampler"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/automated" ;
 	dct:contributor "IGSN Technical Committee" .
 
 <http://vocabulary.odm2.org/specimentype/core> a skos:Concept ;
@@ -71,7 +63,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Core" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Long cylindrical cores"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/core" ;
 	dct:contributor "IGSN Technical Committee" ;
 	skos:narrower
 		<http://vocabulary.odm2.org/specimentype/coreHalfRound> ,
@@ -88,7 +79,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Core half round" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Half-cylindrical products of along-axis split of a whole round"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/coreHalfRound" ;
 	dct:contributor "IGSN Technical Committee" ;
 	skos:broader <http://vocabulary.odm2.org/specimentype/core> .
 
@@ -97,7 +87,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Core piece" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Material occurring between unambiguous [as curated] breaks in recovery"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/corePiece" ;
 	dct:contributor "IGSN Technical Committee" ;
 	skos:broader <http://vocabulary.odm2.org/specimentype/core> .
 
@@ -106,7 +95,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Core quarter round" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Quarter-cylindrical products of along-axis split of a half round"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/coreQuarterRound" ;
 	dct:contributor "IGSN Technical Committee" ;
 	skos:broader <http://vocabulary.odm2.org/specimentype/core> .
 
@@ -124,7 +112,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Core section half" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Half-cylindrical products of along-axis split of a section or its component fragments through a selected diameter"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/coreSectionHalf" ;
 	dct:contributor "IGSN Technical Committee" ;
 	skos:broader <http://vocabulary.odm2.org/specimentype/core> .
 
@@ -133,7 +120,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Core sub-piece" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Unambiguously mated portion of a larger piece noted for curatorial management of the material"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/coreSub-Piece" ;
 	dct:contributor "IGSN Technical Committee" ;
 	skos:broader <http://vocabulary.odm2.org/specimentype/core> .
 
@@ -142,7 +128,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Core whole round" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Cylindrical segments of core or core section material"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/coreWholeRound" ;
 	dct:contributor "IGSN Technical Committee" ;
 	skos:broader <http://vocabulary.odm2.org/specimentype/core> .
 
@@ -151,7 +136,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Cuttings" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Loose, coarse, unconsolidated material suspended in drilling fluid"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/cuttings" ;
 	dct:contributor "IGSN Technical Committee" .
 
 <http://vocabulary.odm2.org/specimentype/dredge> a skos:Concept ;
@@ -159,7 +143,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Dredge" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "A group of rocks collected by dragging a dredge along the seafloor"@en ;
-	dct:source "ttp://vocabulary.odm2.org/specimentype/dredge" ;
 	dct:contributor "IGSN Technical Committee" .
 
 <http://vocabulary.odm2.org/specimentype/foliageDigestion> a skos:Concept ;
@@ -167,7 +150,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Foliage digestion" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Sample that consists of a digestion of plant foliage"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/foliageDigestion" ;
 	dct:contributor "IGSN Technical Committee" .
 
 <http://vocabulary.odm2.org/specimentype/foliageLeaching> a skos:Concept ;
@@ -175,7 +157,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Foliage leaching" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Sample that consists of leachate from foliage"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/foliageLeaching" ;
 	dct:contributor "IGSN Technical Committee" .
 
 <http://vocabulary.odm2.org/specimentype/forestFloorDigestion> a skos:Concept ;
@@ -183,7 +164,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Forest floor digestion" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Sample that consists of a digestion of forest floor material"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/forestFloorDigestion" ;
 	dct:contributor "IGSN Technical Committee" .
 
 <http://vocabulary.odm2.org/specimentype/grab> a skos:Concept ;
@@ -191,7 +171,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Grab" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "A sample (sometimes mechanically collected) from a deposit or area, not intended to be representative of the deposit or area"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/grab" ;
 	dct:contributor "IGSN Technical Committee" .
 
 <http://vocabulary.odm2.org/specimentype/individualSample> a skos:Concept ;
@@ -207,7 +186,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Litter fall digestion" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Sample that consists of a digestion of litter fall"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/litterFallDigestion" ;
 	dct:contributor "IGSN Technical Committee" .
 
 <http://vocabulary.odm2.org/specimentype/orientedCore> a skos:Concept ;
@@ -215,7 +193,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Oriented core" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Core that can be positioned on the surface in the same way that it was arranged in the borehole before extraction"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/orientedCore" ;
 	dct:contributor "IGSN Technical Committee" .
 
 <http://vocabulary.odm2.org/specimentype/other> a skos:Concept ;
@@ -223,7 +200,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Other" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Sample does not fit any of the existing type designations. It is expected that further detailed description of the particular sample be provided"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/other" ;
 	dct:contributor "IGSN Technical Committee" .
 
 <http://vocabulary.odm2.org/specimentype/petriDishDryDeposition> a skos:Concept ;
@@ -231,7 +207,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Petri dish deposition" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Sample from dry deposition in a petri dish"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/petriDishDryDeposition" ;
 	dct:contributor "IGSN Technical Committee" .
 
 <http://vocabulary.odm2.org/specimentype/precipitationBulk> a skos:Concept ;
@@ -239,7 +214,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Precipitation bulk" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Sample from bulk precipitation"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/precipitationBulk" ;
 	dct:contributor "IGSN Technical Committee" .
 
 <http://vocabulary.odm2.org/specimentype/rockPowder> a skos:Concept ;
@@ -247,7 +221,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Rock powder" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "A sample created from pulverizing a rock to powder"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/rockPowder" ;
 	dct:contributor "IGSN Technical Committee" .
 
 <http://vocabulary.odm2.org/specimentype/standardReferenceSpecimen> a skos:Concept ;
@@ -255,7 +228,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Standard referece specimen" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Standard reference specimen"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/standardReferenceSpecimen" ;
 	dct:contributor "IGSN Technical Committee" .
 
 <http://vocabulary.odm2.org/specimentype/terrestrialSection> a skos:Concept ;
@@ -263,7 +235,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Terrestrial section" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "A sample of a section of the near-surface Earth, generally in the critical zone"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/terrestrialSection" ;
 	dct:contributor "IGSN Technical Committee" .
 
 <http://vocabulary.odm2.org/specimentype/thinSection> a skos:Concept ;
@@ -271,7 +242,6 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 	skos:prefLabel "Thin section" ;
 	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/sample> ;
 	skos:definition "Thin section"@en ;
-	dct:source "http://vocabulary.odm2.org/specimentype/thinSection" ;
 	dct:contributor "IGSN Technical Committee" .
 
 :unknown a skos:Concept ;

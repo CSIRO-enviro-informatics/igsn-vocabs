@@ -10,58 +10,46 @@
 
 <http://pid.geoscience.gov.au/def/voc/ga/igsn/registration> a skos:ConceptScheme ;
   dct:title "IGSN Registration Types"@en ;
-  dct:description """This vocabulary contains terms describing the ways in which physical samples may be retrieved by various groups of people, perhaps the sample custodians and other non custodians who wish to inspect them.
-
-If anyone may view the sample, the Access Type 'Public' should be used. If obtaining/viewing the sample is restricted, 'Private' should be used."""@en ;
+  dct:description """This vocabulary contains terms describing the types of things that may be registered wintin the IGSN registration system"""@en ;
 	dc:creator "Nicholas Car" ;
 	dct:created "2019-03-20"^^xsd:date ;
 	dct:creator <http://orcid.org/0000-0002-8742-7730> ;
-	dct:description "A SKOS vocabulary version of the IGSN Access Type codelists."@en ;
 	dct:issued "2019-03-20"^^xsd:date ;
 	dct:issued "2019-03-20"^^xsd:date ;
 	dct:publisher <http://catalogue.linked.data.gov.au/org/O-000887> ;
   dc:publisher "Geoscience Australia" ;
-	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/accessType.xsd> ;
+	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/registrationType.xsd> ;
 	owl:versionInfo "v1.0" ;
   skos:historyNote "This vocabulary was extracted from a previous SKOS publication of the IGSN codelists at http://pid.geoscience.gov.au/def/voc/ga/igsncode to separate what that vocabulary had as multiple skos:Collections into individual vocabularies (skos:ConceptSchemes)." ;
-  skos:hasTopConcept :Private , :Public ;
-.
+  skos:hasTopConcept
+    :PhysicalSample ,
+    :SampleCollection ,
+    :SamplingFeature ;
+  .
 
-<http://schema.igsn.org/vocab/PhysicalSample> a skos:Concept ;
-	skos:prefLabel "Private" ;
-	skos:definition "Not to be accessed outside the hosting institution"@en ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsn/access> ;
-  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/access> ;
-	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/accessType.xsd> ;
-	dc:creator "IGSN Technical Committee" ;
+:PhysicalSample a skos:Concept ;
+	skos:prefLabel "Physical sample" ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/registration> ;
+	skos:definition "A physical sample of a feature of interest, as opposed to a digital one (such as a satellite image or other photo). Physical samples are sometimes known as 'specimens'."@en ;
+  dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
-:registrationType a skos:ConceptScheme ;
-	rdfs:label "Registration type" ;
-	skos:member :PhysicalSample , :SampleCollection , :SamplingFeature .
-
-:PhysicalSample a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
-	skos:prefLabel "Physical sample" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
-	skos:definition "A physical sample of a feature of interest, as opposed to a digital one (such as a satellite image or other photo). Physical samples are sometimes known as 'specimens'."@en ;
-	dct:source "Nicholas Car" ;
-	dct:contributor "IGSN Technical Committee" .
-
 :SampleCollection a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
 	skos:prefLabel "Sample collection" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/registration> ;
 	skos:definition "A set of things"@en ;
-	dct:source "Nicholas Car" ;
-	dct:contributor "IGSN Technical Committee" .
+  dc:creator "IGSN Technical Committee" ;
+  dc:contributor "Nicholas Car" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+.
 
 :SamplingFeature a skos:Concept ;
-	skos:inScheme <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
 	skos:prefLabel "Sampleing feature" ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsncode> ;
+	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/registration> ;
 	skos:definition "A thing which links the sampling device (sensor) to the real-world feature of interest (such as lithosphere, tissue, waterbody). Could be a station,  transect, section"@en ;
-	dct:source "Nicholas Car" ;
-	dct:contributor "IGSN Technical Committee" .
+  dc:creator "IGSN Technical Committee" ;
+  dc:contributor "Nicholas Car" ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+.

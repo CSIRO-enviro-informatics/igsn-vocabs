@@ -10,7 +10,7 @@
 
 <http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry> a skos:ConceptScheme ;
   dct:title "IGSN Access Types"@en ;
-  dct:description """This vocabulary contains terms describing 1 and 2 dimensional shapes"""@en ;
+  dct:description """This vocabulary contains terms describing 1 and 2 dimensional shapes. The geometry type names are taken from the original IGSN XML codelist but the definitions are taken primarily from the Geographic Markup Language (GML) standard"""@en ;
   dct:created "2019-03-20"^^xsd:date ;
   dct:issued "2019-03-20"^^xsd:date ;
   dc:creator "IGSN Technical Committee" ;
@@ -18,7 +18,7 @@
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   dc:publisher "Geoscience Australia" ;
   dct:publisher <http://catalogue.linked.data.gov.au/org/O-000887> ;
-  dct:source <https://github.com/IGSN/metadata/blob/master/description/include/accessType.xsd> ;
+  dct:source <https://github.com/IGSN/metadata/blob/master/description/include/geometryType.xsd> ;
   owl:versionInfo "v1.0" ;
   skos:historyNote "This vocabulary was extracted from a previous SKOS publication of the IGSN codelists at http://pid.geoscience.gov.au/def/voc/ga/igsn/geometry to separate what that vocabulary had as multiple skos:Collections into individual vocabularies (skos:ConceptSchemes)." ;
   skos:hasTopConcept
