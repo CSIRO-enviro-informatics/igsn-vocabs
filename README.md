@@ -18,6 +18,7 @@ There is a single vocabulary (a single skos:ConceptScheme) per RDF (turtle) file
 * [Material Type](material.ttl)
 * [Method Type](method.ttl)
 * [Registration Type](registration.ttl)
+* [Relation Type](relation.ttl)
 * [Resource Type](resource.ttl)
 * [Sample Type](sample.ttl)
 * [SRID Type](srid.ttl)
