@@ -39,125 +39,125 @@ id: a skos:ConceptScheme ;
 .
 
 :ARK a skos:Concept ;
-	skos:prefLabel "Archival Resource Key" ;
-	skos:definition "An Archival Resource Key (ARK) is a Uniform Resource Locator (URL) that is a multi-purpose persistent identifier for information objects of any type."@en ;
+  skos:prefLabel "Archival Resource Key" ;
+  skos:definition "An Archival Resource Key (ARK) is a Uniform Resource Locator (URL) that is a multi-purpose persistent identifier for information objects of any type."@en ;
   skos:topConceptOf id: ;
-	dct:source <https://confluence.ucop.edu/display/Curation/ARK> ;
+  dct:source <https://confluence.ucop.edu/display/Curation/ARK> ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :DOI a skos:Concept ;
-	skos:prefLabel "Digital Object Identifier" ;
-	skos:definition "A persistent identifier or handle used to uniquely identify objects, standardized by the International Organization for Standardization (ISO)"@en ;
-	skos:topConceptOf id: ;
-	dct:source <http://www.doi.org> ;
+  skos:prefLabel "Digital Object Identifier" ;
+  skos:definition "A persistent identifier or handle used to uniquely identify objects, standardized by the International Organization for Standardization (ISO)"@en ;
+  skos:topConceptOf id: ;
+  dct:source <http://www.doi.org> ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :Handle a skos:Concept ;
-	skos:prefLabel "Handle" ;
-	skos:definition "The Handle System is a distributed computer system for assigning persistent identifiers, or handles, to information resources, and for resolving \"those handles into the information necessary to locate, access, and otherwise make use of the resources\""@en ;
-	skos:topConceptOf id: ;
-	dct:source <https://en.wikipedia.org/wiki/Handle_System> ;
+  skos:prefLabel "Handle" ;
+  skos:definition "The Handle System is a distributed computer system for assigning persistent identifiers, or handles, to information resources, and for resolving \"those handles into the information necessary to locate, access, and otherwise make use of the resources\""@en ;
+  skos:topConceptOf id: ;
+  dct:source <https://en.wikipedia.org/wiki/Handle_System> ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :IGSN a skos:Concept ;
-	skos:prefLabel "International GeoSample Number" ;
-	skos:definition "The International Geo Sample Number or IGSN is a sample identification code of typically nine characters. As an active persistent identifier it can be resolved through the Handle System"@en ;
-	skos:topConceptOf id: ;
-	dct:source <https://en.wikipedia.org/wiki/International_Geo_Sample_Number> ;
+  skos:prefLabel "International GeoSample Number" ;
+  skos:definition "The International Geo Sample Number or IGSN is a sample identification code of typically nine characters. As an active persistent identifier it can be resolved through the Handle System"@en ;
+  skos:topConceptOf id: ;
+  dct:source <https://en.wikipedia.org/wiki/International_Geo_Sample_Number> ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :ISBN a skos:Concept ;
-	skos:prefLabel "International Standard Book Number" ;
-	skos:definition "The International Standard Book Number is a unique numeric commercial book identifier"@en ;
-	skos:topConceptOf id: ;
-	dct:source <https://en.wikipedia.org/wiki/International_Standard_Book_Number> ;
+  skos:prefLabel "International Standard Book Number" ;
+  skos:definition "The International Standard Book Number is a unique numeric commercial book identifier"@en ;
+  skos:topConceptOf id: ;
+  dct:source <https://en.wikipedia.org/wiki/International_Standard_Book_Number> ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :ISNI a skos:Concept ;
-	skos:prefLabel "International Standard Name Identifier" ;
-	skos:definition "The International Standard Name Identifier is an identifier for uniquely identifying the public identities of contributors to media content such as books, television programmes, and newspaper articles. Such an identifier consists of 16 digits"@en ;
-	skos:topConceptOf id: ;
-	dct:source <https://en.wikipedia.org/wiki/International_Standard_Name_Identifier> ;
+  skos:prefLabel "International Standard Name Identifier" ;
+  skos:definition "The International Standard Name Identifier is an identifier for uniquely identifying the public identities of contributors to media content such as books, television programmes, and newspaper articles. Such an identifier consists of 16 digits"@en ;
+  skos:topConceptOf id: ;
+  dct:source <https://en.wikipedia.org/wiki/International_Standard_Name_Identifier> ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :ISSN a skos:Concept ;
-	skos:prefLabel "International Standard Serial Number" ;
-	skos:definition "An International Standard Serial Number is an eight-digit serial number used to uniquely identify a serial publication. The ISSN is especially helpful in distinguishing between serials with the same title. ISSN are used in ordering, cataloging, interlibrary loans, and other practices in connection with serial literature"@en ;
-	skos:topConceptOf id: ;
-	dct:source <https://en.wikipedia.org/wiki/International_Standard_Serial_Number> ;
+  skos:prefLabel "International Standard Serial Number" ;
+  skos:definition "An International Standard Serial Number is an eight-digit serial number used to uniquely identify a serial publication. The ISSN is especially helpful in distinguishing between serials with the same title. ISSN are used in ordering, cataloging, interlibrary loans, and other practices in connection with serial literature"@en ;
+  skos:topConceptOf id: ;
+  dct:source <https://en.wikipedia.org/wiki/International_Standard_Serial_Number> ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :LSID a skos:Concept ;
-	skos:prefLabel "Life Science Identifiers" ;
-	skos:definition "Life Science Identifiers are a way to name and locate pieces of information on the web. Essentially, an LSID is a unique identifier for some data, and the LSID protocol specifies a standard way to locate the data. They are a little like DOIs used by many publishers"@en ;
-	skos:topConceptOf id: ;
-	dct:source <https://en.wikipedia.org/wiki/LSID> ;
+  skos:prefLabel "Life Science Identifiers" ;
+  skos:definition "Life Science Identifiers are a way to name and locate pieces of information on the web. Essentially, an LSID is a unique identifier for some data, and the LSID protocol specifies a standard way to locate the data. They are a little like DOIs used by many publishers"@en ;
+  skos:topConceptOf id: ;
+  dct:source <https://en.wikipedia.org/wiki/LSID> ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :ORCID a skos:Concept ;
-	skos:prefLabel "Open Researcher and Contributor ID" ;
-	skos:definition "ORCID is a nonproprietary alphanumeric code to uniquely identify scientific and other academic authors and contributors"@en ;
-	skos:topConceptOf id: ;
-	dct:source <https://en.wikipedia.org/wiki/ORCID> ;
+  skos:prefLabel "Open Researcher and Contributor ID" ;
+  skos:definition "ORCID is a nonproprietary alphanumeric code to uniquely identify scientific and other academic authors and contributors"@en ;
+  skos:topConceptOf id: ;
+  dct:source <https://en.wikipedia.org/wiki/ORCID> ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :PURL a skos:Concept ;
-	skos:prefLabel "Persistent uniform resource locator" ;
-	skos:definition "A persistent uniform resource locator (PURL) is a uniform resource locator (URL) (i.e., location-based uniform resource identifier or URI) that is used to redirect to the location of the requested web resource"@en ;
-	skos:topConceptOf id: ;
-	dct:source <https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator> ;
+  skos:prefLabel "Persistent uniform resource locator" ;
+  skos:definition "A persistent uniform resource locator (PURL) is a uniform resource locator (URL) (i.e., location-based uniform resource identifier or URI) that is used to redirect to the location of the requested web resource"@en ;
+  skos:topConceptOf id: ;
+  dct:source <https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator> ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :URI a skos:Concept ;
-	skos:prefLabel "Uniform Resource Identifier" ;
-	skos:definition "A compact sequence of characters that identifies an abstract or physical resource, formulated according to RFC 3986"@en ;
-	skos:topConceptOf id: ;
-	dct:source <https://tools.ietf.org/rfc/rfc3986> ;
+  skos:prefLabel "Uniform Resource Identifier" ;
+  skos:definition "A compact sequence of characters that identifies an abstract or physical resource, formulated according to RFC 3986"@en ;
+  skos:topConceptOf id: ;
+  dct:source <https://tools.ietf.org/rfc/rfc3986> ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :URN a skos:Concept ;
-	skos:prefLabel "Uniform Resource Name" ;
-	skos:definition "Persistent, location-independent, resource identifiers, formulated according to RFC 2141"@en ;
-	skos:topConceptOf id: ;
-	dct:source <http://www.ietf.org/rfc/rfc2141> ;
+  skos:prefLabel "Uniform Resource Name" ;
+  skos:definition "Persistent, location-independent, resource identifiers, formulated according to RFC 2141"@en ;
+  skos:topConceptOf id: ;
+  dct:source <http://www.ietf.org/rfc/rfc2141> ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :VIAF a skos:Concept ;
-	skos:prefLabel "Virtual International Authority File" ;
-	skos:definition "The VIAFÂ® (Virtual International Authority File) combines multiple name authority files into a single OCLC-hosted name authority service"@en ;
-	skos:topConceptOf id: ;
-	dct:source <https://viaf.org> ;
+  skos:prefLabel "Virtual International Authority File" ;
+  skos:definition "The VIAFÂ® (Virtual International Authority File) combines multiple name authority files into a single OCLC-hosted name authority service"@en ;
+  skos:topConceptOf id: ;
+  dct:source <https://viaf.org> ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 <http://www.opengis.net/def/nil/OGC/0/unknown> a skos:Concept ;
-	skos:prefLabel "Unknown" ;
+  skos:prefLabel "Unknown" ;
   skos:definition "The correct value is not known to, or not computable by, the sender of this data. However, the correct value probably exists"@en ;
-	skos:topConceptOf id: ;
+  skos:topConceptOf id: ;
 .
