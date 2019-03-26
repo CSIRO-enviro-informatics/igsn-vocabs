@@ -44,91 +44,91 @@ If anyone may view the sample, the Access Type 'Public' should be used. If obtai
 .
 
 medium:air a skos:Concept ;
-	skos:prefLabel "Air" ;
-	skos:definition "Specimen collection of ambient air or sensor emplaced to measure properties of ambient air"@en ;
-	skos:topConceptOf material: ;
+  skos:prefLabel "Air" ;
+  skos:definition "Specimen collection of ambient air or sensor emplaced to measure properties of ambient air"@en ;
+  skos:topConceptOf material: ;
 .
 
 medium:gas a skos:Concept ;
-	skos:prefLabel "Gas" ;
-	skos:definition "Gas phase specimen or sensor emplaced to measure properties of a gas"@en ;
-	skos:topConceptOf material: ;
+  skos:prefLabel "Gas" ;
+  skos:definition "Gas phase specimen or sensor emplaced to measure properties of a gas"@en ;
+  skos:topConceptOf material: ;
 .
 
 medium:ice a skos:Concept ;
-	skos:prefLabel "Ice" ;
-	skos:definition "Sample collected as frozen water or sensor emplaced to measure properties of ice"@en ;
-	skos:topConceptOf material: ;
+  skos:prefLabel "Ice" ;
+  skos:definition "Sample collected as frozen water or sensor emplaced to measure properties of ice"@en ;
+  skos:topConceptOf material: ;
 .
 
 medium:liquidAqueous a skos:Concept ;
-	skos:prefLabel "Liquid aqueous" ;
-	skos:definition "Specimen collected as liquid water or sensor emplaced to measure properties of water in sampled environment"@en ;
-	skos:topConceptOf material: ;
+  skos:prefLabel "Liquid aqueous" ;
+  skos:definition "Specimen collected as liquid water or sensor emplaced to measure properties of water in sampled environment"@en ;
+  skos:topConceptOf material: ;
 .
 
 medium:liquidOrganic a skos:Concept ;
-	skos:prefLabel "Liquid organic" ;
-	skos:definition "Specimen collected as an organic liquid"@en ;
-	skos:topConceptOf material: ;
+  skos:prefLabel "Liquid organic" ;
+  skos:definition "Specimen collected as an organic liquid"@en ;
+  skos:topConceptOf material: ;
 .
 
 medium:mineral a skos:Concept ;
-	skos:prefLabel "Mineral" ;
-	skos:definition "Specimen collected as a mineral"@en ;
-	skos:topConceptOf material: ;
+  skos:prefLabel "Mineral" ;
+  skos:definition "Specimen collected as a mineral"@en ;
+  skos:topConceptOf material: ;
 .
 
 medium:organism a skos:Concept ;
-	skos:prefLabel "Organism" ;
-	skos:definition "Data collected about a species at organism level"@en ;
-	skos:topConceptOf material: ;
+  skos:prefLabel "Organism" ;
+  skos:definition "Data collected about a species at organism level"@en ;
+  skos:topConceptOf material: ;
 .
 
 medium:other a skos:Concept ;
-	skos:prefLabel "Other" ;
-	skos:definition "Other"@en ;
-	skos:topConceptOf material: ;
+  skos:prefLabel "Other" ;
+  skos:definition "Other"@en ;
+  skos:topConceptOf material: ;
 .
 
 medium:particulate a skos:Concept ;
-	skos:prefLabel "Particulate" ;
-	skos:definition "Specimen collected from particulates suspended in a paticulate-fluid mixture. Examples include particulates in water or air"@en ;
-	skos:topConceptOf material: ;
+  skos:prefLabel "Particulate" ;
+  skos:definition "Specimen collected from particulates suspended in a paticulate-fluid mixture. Examples include particulates in water or air"@en ;
+  skos:topConceptOf material: ;
 .
 
 medium:rock a skos:Concept ;
-	skos:prefLabel "Rock" ;
-	skos:definition "Specimen collected from a naturally occuring solid aggregate of one or more minerals"@en ;
-	skos:topConceptOf material: ;
+  skos:prefLabel "Rock" ;
+  skos:definition "Specimen collected from a naturally occuring solid aggregate of one or more minerals"@en ;
+  skos:topConceptOf material: ;
 .
 
 medium:sediment a skos:Concept ;
-	skos:prefLabel "Sediment" ;
-	skos:definition "Specimen collected from material broken down by processes of weathering and erosion and subsequently transported by the action of wind, water, or ice, and/or by the force of gravity acting on the particles. Sensors may also be emplaced to measure sediment properties"@en ;
-	skos:topConceptOf material: ;
+  skos:prefLabel "Sediment" ;
+  skos:definition "Specimen collected from material broken down by processes of weathering and erosion and subsequently transported by the action of wind, water, or ice, and/or by the force of gravity acting on the particles. Sensors may also be emplaced to measure sediment properties"@en ;
+  skos:topConceptOf material: ;
 .
 
 medium:snow a skos:Concept ;
-	skos:prefLabel "Snow" ;
-	skos:definition "Observation in, of or sample taken from snow"@en ;
-	skos:topConceptOf material: ;
+  skos:prefLabel "Snow" ;
+  skos:definition "Observation in, of or sample taken from snow"@en ;
+  skos:topConceptOf material: ;
 .
 
 medium:soil a skos:Concept ;
-	skos:prefLabel "Soil" ;
-	skos:definition "Specimen collected from soil or sensor emplaced to measure properties of soil. Soil includes the mixture of minerals, organic matter, gasses, liquids, and organisms that make up the upper layer of earth in which plants grow"@en ;
-	skos:topConceptOf material: ;
+  skos:prefLabel "Soil" ;
+  skos:definition "Specimen collected from soil or sensor emplaced to measure properties of soil. Soil includes the mixture of minerals, organic matter, gasses, liquids, and organisms that make up the upper layer of earth in which plants grow"@en ;
+  skos:topConceptOf material: ;
 .
 
 medium:tissue a skos:Concept ;
-	skos:prefLabel "Tissue" ;
-	skos:definition "Sample of a living organism's tissue or sensor emplaced to measure property of tissue"@en ;
-	skos:topConceptOf material: ;
+  skos:prefLabel "Tissue" ;
+  skos:definition "Sample of a living organism's tissue or sensor emplaced to measure property of tissue"@en ;
+  skos:topConceptOf material: ;
 .
 
 medium:unknown a skos:Concept ;
-	skos:prefLabel "Unknown" ;
-	skos:definition "The sampled medium is unknown"@en ;
-	skos:topConceptOf material: ;
+  skos:prefLabel "Unknown" ;
+  skos:definition "The sampled medium is unknown"@en ;
+  skos:topConceptOf material: ;
 .
