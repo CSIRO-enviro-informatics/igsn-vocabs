@@ -40,277 +40,279 @@
 .
 
 :Auger a skos:Concept ;
-	skos:prefLabel "Auger" ;
-	skos:definition "An auger is a drilling device, or drill bit, that usually includes a rotating helical screw blade called a \"flighting\" to act as a screw conveyor to remove the drilled out material."@en ;
-	skos:inScheme method: ;
-	dct:source "https://en.wikipedia.org/wiki/Auger_(drill)" ;
+  skos:prefLabel "Auger" ;
+  skos:definition "An auger is a drilling device, or drill bit, that usually includes a rotating helical screw blade called a \"flighting\" to act as a screw conveyor to remove the drilled out material."@en ;
+  skos:inScheme method: ;
+  dct:source "https://en.wikipedia.org/wiki/Auger_(drill)" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-	skos:broader :Hand ;
+  skos:broader :Hand ;
 .
 
 :Blast a skos:Concept ;
-	skos:prefLabel "Blast" ;
-	skos:definition "An explosion is a rapid increase in volume and release of energy in an extreme manner, usually with the generation of high temperatures and the release of gases."@en ;
-	skos:topConceptOf method: ;
-	dct:source "https://en.wikipedia.org/wiki/Explosion" ;
+  skos:prefLabel "Blast" ;
+  skos:definition "An explosion is a rapid increase in volume and release of energy in an extreme manner, usually with the generation of high temperatures and the release of gases."@en ;
+  skos:topConceptOf method: ;
+  dct:source "https://en.wikipedia.org/wiki/Explosion" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :Box a skos:Concept ;
-	skos:prefLabel "Box" ;
-	skos:definition "A method that obtains a large volume or large surface area core with shallow penetration and minimum disturbance. Commonly uses a double spade system"@en ;
-	skos:inScheme method: ;
-	dct:source "Geoscience Australia" ;
+  skos:prefLabel "Box" ;
+  skos:definition "A method that obtains a large volume or large surface area core with shallow penetration and minimum disturbance. Commonly uses a double spade system"@en ;
+  skos:inScheme method: ;
+  dct:source "Geoscience Australia" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-	skos:broader :Corer ;
+  skos:broader :Corer ;
 .
 
 :ChainBag a skos:Concept ;
-	skos:prefLabel "Chain bag" ;
-	skos:definition "Sampling of large rocks from the sea floor using a chain bag"@en ;
+  skos:prefLabel "Chain bag" ;
+  skos:definition "Sampling of large rocks from the sea floor using a chain bag"@en ;
   skos:inScheme method: ;
-	dct:source "Geoscience Australia" ;
+  dct:source "Geoscience Australia" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-	skos:broader :Dredge ;
+  skos:broader :Dredge ;
 .
 
 :Corer a skos:Concept ;
-	skos:prefLabel "Corer" ;
-	skos:definition "Sampling of a core of earth material by an unspecified drilling method"@en ;
-	skos:topConceptOf method: ;
-	dct:source "Geoscience Australia" ;
+  skos:prefLabel "Corer" ;
+  skos:definition "Sampling of a core of earth material by an unspecified drilling method"@en ;
+  skos:topConceptOf method: ;
+  dct:source "Geoscience Australia" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :Dredge a skos:Concept ;
-	skos:prefLabel "Dredge" ;
-	skos:definition "A boat or barge used in freshwater or ocean dredging"@en ;
-	skos:topConceptOf method: ;
-	dct:source "Nicholas Car" ;
+  skos:prefLabel "Dredge" ;
+  skos:definition "A boat or barge used in freshwater or ocean dredging"@en ;
+  skos:topConceptOf method: ;
+  dct:source "Nicholas Car" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :Drill a skos:Concept ;
-	skos:prefLabel "Drill" ;
-	skos:definition "A drill is a tool fitted with a cutting tool attachment or driving tool attachment, usually a drill bit or driver bit, used for boring holes in various materials"@en ;
-	skos:inScheme method: ;
-	dct:source "https://en.wikipedia.org/wiki/Drill" ;
+  skos:prefLabel "Drill" ;
+  skos:definition "A drill is a tool fitted with a cutting tool attachment or driving tool attachment, usually a drill bit or driver bit, used for boring holes in various materials"@en ;
+  skos:inScheme method: ;
+  dct:source "https://en.wikipedia.org/wiki/Drill" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-	skos:broader :Corer .
+  skos:broader :Corer ;
+.
 
 :FreeFall a skos:Concept ;
-	skos:prefLabel "Free fall" ;
-	skos:definition "Method of sediment sampling along transits up to 1.2 m. Diameter 4 to 8 cm"@en ;
-	skos:inScheme method: ;
-	dct:source "Geoscience Australia" ;
+  skos:prefLabel "Free fall" ;
+  skos:definition "Method of sediment sampling along transits up to 1.2 m. Diameter 4 to 8 cm"@en ;
+  skos:inScheme method: ;
+  dct:source "Geoscience Australia" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-	skos:broader :Corer .
+  skos:broader :Corer ;
+.
 
 :Grab a skos:Concept ;
-	skos:prefLabel "Grap" ;
-	skos:definition "Specimens gathered from the bed of a water body by a mechanical grab primarily for lithological and petrographic analyses"@en ;
-	skos:topConceptOf method: ;
-	dct:source "Geoscience Australia" ;
+  skos:prefLabel "Grap" ;
+  skos:definition "Specimens gathered from the bed of a water body by a mechanical grab primarily for lithological and petrographic analyses"@en ;
+  skos:topConceptOf method: ;
+  dct:source "Geoscience Australia" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :Gravity a skos:Concept ;
-	skos:prefLabel "Gravity" ;
-	skos:definition "Used only where short cores are required. Core barrel is gravity forced. Near surface high quality core"@en ;
-	skos:inScheme method: ;
-	dct:source "Geoscience Australia" ;
+  skos:prefLabel "Gravity" ;
+  skos:definition "Used only where short cores are required. Core barrel is gravity forced. Near surface high quality core"@en ;
+  skos:inScheme method: ;
+  dct:source "Geoscience Australia" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-	skos:broader :Corer ;
+  skos:broader :Corer ;
 .
 
 :GravityGiant a skos:Concept ;
-	skos:prefLabel "Gravity giant" ;
-	skos:definition "A Giant Gravity Corer is used to recover cores up to 6.5 meters in length. Normally operated from a hydrographic winch, this gravity core can travel through the water column at speeds up to 125 meters a minute, which reduces station time required, especially in pelagic ocean depths."@en ;
-	skos:inScheme method: ;
-	dct:source "Irina Bastrakova" ;
+  skos:prefLabel "Gravity giant" ;
+  skos:definition "A Giant Gravity Corer is used to recover cores up to 6.5 meters in length. Normally operated from a hydrographic winch, this gravity core can travel through the water column at speeds up to 125 meters a minute, which reduces station time required, especially in pelagic ocean depths."@en ;
+  skos:inScheme method: ;
+  dct:source "Irina Bastrakova" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-	skos:broader :Corer ;
+  skos:broader :Corer ;
 .
 
 :Hammer a skos:Concept ;
-	skos:prefLabel "Hammer" ;
-	skos:definition "A hammer is a tool or device that delivers a blow to an object. Most hammers are hand tools used to drive nails, fit parts, forge metal, and break apart objects"@en ;
-	skos:inScheme method: ;
-	dct:source "https://en.wikipedia.org/wiki/Hammer" ;
+  skos:prefLabel "Hammer" ;
+  skos:definition "A hammer is a tool or device that delivers a blow to an object. Most hammers are hand tools used to drive nails, fit parts, forge metal, and break apart objects"@en ;
+  skos:inScheme method: ;
+  dct:source "https://en.wikipedia.org/wiki/Hammer" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-	skos:broader :Hand ;
+  skos:broader :Hand ;
 .
 
 :Hand a skos:Concept ;
-	skos:prefLabel "Hand" ;
-	skos:definition "A human hand"@en ;
-	skos:topConceptOf method: ;
-	dct:source "Nicholas Car" ;
+  skos:prefLabel "Hand" ;
+  skos:definition "A human hand"@en ;
+  skos:topConceptOf method: ;
+  dct:source "Nicholas Car" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :Kastenlot a skos:Concept ;
-	skos:prefLabel "Kastenlot" ;
-	skos:definition "Also known as a Kiel box corer, a kastenlot is a square-cross sectioned core sampling device used to collect marine sediments."@en ;
-	skos:inScheme method: ;
-	dct:source "Nicholas Car" ;
+  skos:prefLabel "Kastenlot" ;
+  skos:definition "Also known as a Kiel box corer, a kastenlot is a square-cross sectioned core sampling device used to collect marine sediments."@en ;
+  skos:inScheme method: ;
+  dct:source "Nicholas Car" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-	skos:broader :Corer ;
+  skos:broader :Corer ;
 .
 
 :Knife a skos:Concept ;
-	skos:prefLabel "Knife" ;
-	skos:definition "A knife is a tool with a cutting edge or blade, hand-held or otherwise, with most having a handle"@en ;
-	skos:inScheme method: ;
-	dct:source "https://en.wikipedia.org/wiki/Knife" ;
+  skos:prefLabel "Knife" ;
+  skos:definition "A knife is a tool with a cutting edge or blade, hand-held or otherwise, with most having a handle"@en ;
+  skos:inScheme method: ;
+  dct:source "https://en.wikipedia.org/wiki/Knife" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-	skos:broader :Hand ;
+  skos:broader :Hand ;
 .
 
 :MOCNESS a skos:Concept ;
-	skos:prefLabel "Multiple Opening/Closing Net and Environmental Sensing System" ;
-	skos:definition "Multiple Opening/Closing Net and Environmental Sensing System and is a net system for plankton in the ocean"@en ;
-	skos:inScheme method: ;
-	dct:source "https://en.wikipedia.org/wiki/MOCNESS" ;
+  skos:prefLabel "Multiple Opening/Closing Net and Environmental Sensing System" ;
+  skos:definition "Multiple Opening/Closing Net and Environmental Sensing System and is a net system for plankton in the ocean"@en ;
+  skos:inScheme method: ;
+  dct:source "https://en.wikipedia.org/wiki/MOCNESS" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-	skos:broader :Net ;
+  skos:broader :Net ;
 .
 
 :Multi a skos:Concept ;
-	skos:prefLabel "Multi" ;
-	skos:definition "A corer that can retrieve multiple cores at once"@en ;
-	skos:inScheme method: ;
-	dct:source "Jens Klump" ;
+  skos:prefLabel "Multi" ;
+  skos:definition "A corer that can retrieve multiple cores at once"@en ;
+  skos:inScheme method: ;
+  dct:source "Jens Klump" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-	skos:broader :Corer ;
+  skos:broader :Corer ;
 .
 
 :Net a skos:Concept ;
-	skos:prefLabel "Net" ;
-	skos:definition "Fibers woven in a grid-like structure. It blocks the passage of large items, while letting small items and fluids pass. It requires less material than something sheet-like, and provides a degree of transparency"@en ;
-	skos:topConceptOf method: ;
-	dct:source <https://en.wikipedia.org/wiki/Net_(device)> ;
+  skos:prefLabel "Net" ;
+  skos:definition "Fibers woven in a grid-like structure. It blocks the passage of large items, while letting small items and fluids pass. It requires less material than something sheet-like, and provides a degree of transparency"@en ;
+  skos:topConceptOf method: ;
+  dct:source <https://en.wikipedia.org/wiki/Net_(device)> ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :Piston a skos:Concept ;
-	skos:prefLabel "Piston" ;
-	skos:definition "Uses a piston to drive the core barrel. High quality long cores"@en ;
-	skos:inScheme method: ;
-	dct:source "Geoscience Australia" ;
+  skos:prefLabel "Piston" ;
+  skos:definition "Uses a piston to drive the core barrel. High quality long cores"@en ;
+  skos:inScheme method: ;
+  dct:source "Geoscience Australia" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   skos:broader :Corer ;
 .
 
 :PistonGiant a skos:Concept ;
-	skos:prefLabel "Piston giant" ;
-	skos:definition "Also called Jumbo Piston Core.  Designed to large diameter (4.5â€) undisturbed cores up to 100 feet (>30 m) long"@en ;
-	skos:inScheme method: ;
-	dct:source "Irina Bastrakova" ;
+  skos:prefLabel "Piston giant" ;
+  skos:definition "Also called Jumbo Piston Core.  Designed to large diameter (4.5â€) undisturbed cores up to 100 feet (>30 m) long"@en ;
+  skos:inScheme method: ;
+  dct:source "Irina Bastrakova" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   skos:broader :Corer ;
 .
 
 :Probe a skos:Concept ;
-	skos:prefLabel "Probe" ;
-	skos:definition "Probe samplings are useful for sampling seed, grain, and other granular materials. Shorter length probes are more commonly used when sampling from drums and bins, while longer probes are optimal for sampling from larger stockpiles such as barges, rail cars, large trucks and hoppers."@en ;
+  skos:prefLabel "Probe" ;
+  skos:definition "Probe samplings are useful for sampling seed, grain, and other granular materials. Shorter length probes are more commonly used when sampling from drums and bins, while longer probes are optimal for sampling from larger stockpiles such as barges, rail cars, large trucks and hoppers."@en ;
   skos:topConceptOf method: ;
-	dct:source "Irina Bastrakova" ;
+  dct:source "Irina Bastrakova" ;
 .
 
 :Rock a skos:Concept ;
-	skos:prefLabel "Rock" ;
-	skos:definition "Rock or stone is a natural substance, a solid aggregate of one or more minerals or mineraloids. For example, granite, a common rock, is a combination of the minerals quartz, feldspar and biotite"@en ;
-	skos:inScheme method: ;
-	dct:source <https://en.wikipedia.org/wiki/Rock_(geology)> ;
+  skos:prefLabel "Rock" ;
+  skos:definition "Rock or stone is a natural substance, a solid aggregate of one or more minerals or mineraloids. For example, granite, a common rock, is a combination of the minerals quartz, feldspar and biotite"@en ;
+  skos:inScheme method: ;
+  dct:source <https://en.wikipedia.org/wiki/Rock_(geology)> ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   skos:broader :Corer ;
 .
 
 :Scallop a skos:Concept ;
-	skos:prefLabel "Scallop" ;
-	skos:definition "Scallop dredge is a commercially-used towed device that may be operated over very coarse terrain but would be likely to suffer damage if towed over bedrock or through large boulders. The dredge itself consists of a triangular steel frame supporting, on its underside, a spring-loaded plate to which a tooth bar, designed to dig into the sediment, is bolted"@en ;
-	skos:inScheme method: ;
-	dct:source "Irina Bastrakova" ;
+  skos:prefLabel "Scallop" ;
+  skos:definition "Scallop dredge is a commercially-used towed device that may be operated over very coarse terrain but would be likely to suffer damage if towed over bedrock or through large boulders. The dredge itself consists of a triangular steel frame supporting, on its underside, a spring-loaded plate to which a tooth bar, designed to dig into the sediment, is bolted"@en ;
+  skos:inScheme method: ;
+  dct:source "Irina Bastrakova" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
-	skos:broader :Dredge ;
+  skos:broader :Dredge ;
 .
 
 :Scoop a skos:Concept ;
-	skos:prefLabel "Scoop" ;
-	skos:definition "Sampling of loose material (e.g. soil) with a sample scoop."@en ;
+  skos:prefLabel "Scoop" ;
+  skos:definition "Sampling of loose material (e.g. soil) with a sample scoop."@en ;
   skos:topConceptOf method: ;
-	dct:source "Irina Bastrakova" ;
+  dct:source "Irina Bastrakova" ;
 .
 
 :SideSaddle a skos:Concept ;
-	skos:prefLabel "Side saddle" ;
-	skos:definition "A method to extract a core or a plug from the sidewall of a borehole Also known as sidewall."@en ;
-	skos:inScheme method: ;
-	dct:source "Geoscience Australia" ;
+  skos:prefLabel "Side saddle" ;
+  skos:definition "A method to extract a core or a plug from the sidewall of a borehole Also known as sidewall."@en ;
+  skos:inScheme method: ;
+  dct:source "Geoscience Australia" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   skos:broader :Corer ;
 .
 
 :Trap a skos:Concept ;
-	skos:prefLabel "Trap" ;
-	skos:definition "Sediment traps are containers placed in the water column to collect particles falling toward the sea floor. The traps collect tiny sediment or larger accumulations called marine snow - made up of organic matter, dead sea creatures, tiny shells, dust and minerals"@en ;
-	skos:topConceptOf method: ;
-	dct:source "Geoscience Australia" ;
+  skos:prefLabel "Trap" ;
+  skos:definition "Sediment traps are containers placed in the water column to collect particles falling toward the sea floor. The traps collect tiny sediment or larger accumulations called marine snow - made up of organic matter, dead sea creatures, tiny shells, dust and minerals"@en ;
+  skos:topConceptOf method: ;
+  dct:source "Geoscience Australia" ;
 .
 
 :Trawl a skos:Concept ;
-	skos:prefLabel "Trawl" ;
-	skos:definition "Sampling method designed to sample at and just above the surface of the seabed"@en ;
-	skos:topConceptOf method: ;
-	dct:source "Irina Bastrakova" ;
+  skos:prefLabel "Trawl" ;
+  skos:definition "Sampling method designed to sample at and just above the surface of the seabed"@en ;
+  skos:topConceptOf method: ;
+  dct:source "Irina Bastrakova" ;
 .
 
 :TriggerWeight a skos:Concept ;
-	skos:prefLabel "Trigger weight" ;
-	skos:definition "A corer that uses a weighted line to measure waterbody depth. The weight triggers the corer action on contact with the bottom. The corer could be a piston or similar"@en ;
-	skos:inScheme method: ;
-	dct:source "Nicholas Car, after Addy & Ewing, 1974, DOI:10.1016/0025-3227(74)90040-1" ;
+  skos:prefLabel "Trigger weight" ;
+  skos:definition "A corer that uses a weighted line to measure waterbody depth. The weight triggers the corer action on contact with the bottom. The corer could be a piston or similar"@en ;
+  skos:inScheme method: ;
+  dct:source "Nicholas Car, after Addy & Ewing, 1974, DOI:10.1016/0025-3227(74)90040-1" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   skos:broader :Corer ;
 .
 
 :Vibrating a skos:Concept ;
-	skos:prefLabel "Vibrating" ;
-	skos:definition "A core tube is attached to a source of mechanical vibration (the power head) and lowered into  sediment. The vibrations provide energy for rearranging the particles within the sediment in such a way that the coretube penetrates under the static weight of the vibracoring apparatus. Samples include stiff and stony clays, soft rock and sands, and saturated sediments which cannot be sampled using gravity or piston corers. Also known as VIBRA"@en ;
-	skos:inScheme method: ;
-	dct:source "Geoscience Australia" ;
+  skos:prefLabel "Vibrating" ;
+  skos:definition "A core tube is attached to a source of mechanical vibration (the power head) and lowered into  sediment. The vibrations provide energy for rearranging the particles within the sediment in such a way that the coretube penetrates under the static weight of the vibracoring apparatus. Samples include stiff and stony clays, soft rock and sands, and saturated sediments which cannot be sampled using gravity or piston corers. Also known as VIBRA"@en ;
+  skos:inScheme method: ;
+  dct:source "Geoscience Australia" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   skos:broader :Corer ;
 .
 
 <http://www.opengis.net/def/nil/OGC/0/unknown> a skos:Concept ;
-	skos:prefLabel "Unknown" ;
+  skos:prefLabel "Unknown" ;
   skos:definition "The correct value is not known to, or not computable by, the sender of this data. However, the correct value probably exists"@en ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/collection> ;
+  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/collection> ;
 .
