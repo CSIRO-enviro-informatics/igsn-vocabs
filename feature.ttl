@@ -50,139 +50,139 @@ feature: a skos:ConceptScheme ;
 .
 
 sft:CTD a skos:Concept ;
-	skos:prefLabel "CTD" ;
-	skos:definition "A CTD (Conductivity, Temperature, and Depth) cast is a water column depth profile collected over a specific and relatively short date-time range, that can be considered as a parent specimen"@en ;
-	skos:topConceptOf feature: ;
+  skos:prefLabel "CTD" ;
+  skos:definition "A CTD (Conductivity, Temperature, and Depth) cast is a water column depth profile collected over a specific and relatively short date-time range, that can be considered as a parent specimen"@en ;
+  skos:topConceptOf feature: ;
 .
 
 sft:borehole a skos:Concept ;
-	skos:prefLabel "Borehole" ;
-	skos:definition "A narrow shaft bored into the ground, either vertically or horizontally. A borehole includes the hole cavity and walls surrounding that cavity"@en ;
-	skos:topConceptOf feature: ;
+  skos:prefLabel "Borehole" ;
+  skos:definition "A narrow shaft bored into the ground, either vertically or horizontally. A borehole includes the hole cavity and walls surrounding that cavity"@en ;
+  skos:topConceptOf feature: ;
 .
 
 sft:crossSection a skos:Concept ;
-	skos:prefLabel "Cross section" ;
-	skos:definition "The intersection of a body in three-dimensional space with a plane. Represented as a polygon"@en ;
-	skos:topConceptOf feature: ;
+  skos:prefLabel "Cross section" ;
+  skos:definition "The intersection of a body in three-dimensional space with a plane. Represented as a polygon"@en ;
+  skos:topConceptOf feature: ;
 .
 
 sft:depthInterval a skos:Concept ;
-	skos:prefLabel "Depth interval" ;
-	skos:definition "A discrete segment along a longer vertical path, such as a borehole, soil profile or other depth profile, in which an observation or specimen is collected over the distance between the upper and lower depth limits of the interval. A Depth Interval is a sub-type of Interval"@en ;
+  skos:prefLabel "Depth interval" ;
+  skos:definition "A discrete segment along a longer vertical path, such as a borehole, soil profile or other depth profile, in which an observation or specimen is collected over the distance between the upper and lower depth limits of the interval. A Depth Interval is a sub-type of Interval"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:excavation a skos:Concept ;
-	skos:prefLabel "Excavation" ;
-	skos:definition "An artificially constructed cavity in the earth that is deeper than the soil, larger than a well bore, and substantially open to the atmosphere. The diameter of an excavation is typically similar or larger than the depth. Excavations include building-foundation diggings, roadway cuts, and surface mines"@en ;
+  skos:prefLabel "Excavation" ;
+  skos:definition "An artificially constructed cavity in the earth that is deeper than the soil, larger than a well bore, and substantially open to the atmosphere. The diameter of an excavation is typically similar or larger than the depth. Excavations include building-foundation diggings, roadway cuts, and surface mines"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:fieldArea a skos:Concept ;
-	skos:prefLabel "Field area" ;
-	skos:definition "A location at which field experiments or observations of ambient conditions are conducted. A field area may contain many sites and has a geographical footprint that can be represented by a polygon"@en ;
+  skos:prefLabel "Field area" ;
+  skos:definition "A location at which field experiments or observations of ambient conditions are conducted. A field area may contain many sites and has a geographical footprint that can be represented by a polygon"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:flightline a skos:Concept ;
-	skos:prefLabel "Flight line" ;
-	skos:definition "A path along which an aircraft travels while measuring a phenomena of study"@en ;
+  skos:prefLabel "Flight line" ;
+  skos:definition "A path along which an aircraft travels while measuring a phenomena of study"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:interval a skos:Concept ;
-	skos:prefLabel "Interval" ;
-	skos:definition "A discrete segment along a longer path in which an observation or specimen is collected over the distance between the upper and lower bounds of the interval. A Depth Interval is a sub-type of Interval"@en ;
+  skos:prefLabel "Interval" ;
+  skos:definition "A discrete segment along a longer path in which an observation or specimen is collected over the distance between the upper and lower bounds of the interval. A Depth Interval is a sub-type of Interval"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:observationWell a skos:Concept ;
-	skos:prefLabel "Observation well" ;
-	skos:definition "A hole or shaft constructed in the earth intended to be used to locate, sample, or develop groundwater, oil, gas, or some other subsurface material. The diameter of a well is typically much smaller than the depth. Wells are also used to artificially recharge groundwater or to pressurize oil and gas production zones. Specific kinds of wells should be specified in the SamplingFeature description. For example, underground waste-disposal wells should be classified as waste injection wells"@en ;
+  skos:prefLabel "Observation well" ;
+  skos:definition "A hole or shaft constructed in the earth intended to be used to locate, sample, or develop groundwater, oil, gas, or some other subsurface material. The diameter of a well is typically much smaller than the depth. Wells are also used to artificially recharge groundwater or to pressurize oil and gas production zones. Specific kinds of wells should be specified in the SamplingFeature description. For example, underground waste-disposal wells should be classified as waste injection wells"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:profile a skos:Concept ;
-	skos:prefLabel "Profile" ;
-	skos:definition "A one-dimensional grid at fixed (x, y, t) coordinates within a four-dimensional (x, y, z, t) coordinate reference system. The grid axis is aligned with the coordinate reference system z-axis. Typically used to characterize or measure phenomena as a function of depth"@en ;
+  skos:prefLabel "Profile" ;
+  skos:definition "A one-dimensional grid at fixed (x, y, t) coordinates within a four-dimensional (x, y, z, t) coordinate reference system. The grid axis is aligned with the coordinate reference system z-axis. Typically used to characterize or measure phenomena as a function of depth"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:quadrat a skos:Concept ;
-	skos:prefLabel "Quadrat" ;
-	skos:definition "A small plot used to isolate a standard unit of area for study of the distribution of an item over a large area"@en ;
+  skos:prefLabel "Quadrat" ;
+  skos:definition "A small plot used to isolate a standard unit of area for study of the distribution of an item over a large area"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:scene a skos:Concept ;
-	skos:prefLabel "Scene" ;
-	skos:definition "A two-dimensional visual extent within a physical environment"@en ;
+  skos:prefLabel "Scene" ;
+  skos:definition "A two-dimensional visual extent within a physical environment"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:shipsTrack a skos:Concept ;
-	skos:prefLabel "Ships track" ;
-	skos:definition "A path along which a ship or vessel travels while measuring a phenomena of study. Represented as a line connecting the ship's consecutive positions on the surface of the earth"@en ;
+  skos:prefLabel "Ships track" ;
+  skos:definition "A path along which a ship or vessel travels while measuring a phenomena of study. Represented as a line connecting the ship's consecutive positions on the surface of the earth"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:site a skos:Concept ;
-	skos:prefLabel "Site" ;
-	skos:definition "A facility or location at which observations have been collected. A site may have instruments or equipment installed and may contain multiple other sampling features (e.g., a stream gage, weather station, observation well, etc.). Additionally, many specimen sampling features may be collected at a site. Sites are also often referred to as stations. A site is represented as a point, but it may have a geographical footprint that is not a point. The site coordinates serve as a reference for the site and offsets may be specified from this reference location"@en ;
+  skos:prefLabel "Site" ;
+  skos:definition "A facility or location at which observations have been collected. A site may have instruments or equipment installed and may contain multiple other sampling features (e.g., a stream gage, weather station, observation well, etc.). Additionally, many specimen sampling features may be collected at a site. Sites are also often referred to as stations. A site is represented as a point, but it may have a geographical footprint that is not a point. The site coordinates serve as a reference for the site and offsets may be specified from this reference location"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:soilPitSection a skos:Concept ;
-	skos:prefLabel "Soil pit section" ;
-	skos:definition "Two-dimensional vertical face of a soil pit that is described and sampled"@en ;
+  skos:prefLabel "Soil pit section" ;
+  skos:definition "Two-dimensional vertical face of a soil pit that is described and sampled"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:specimen a skos:Concept ;
-	skos:prefLabel "Specimen" ;
-	skos:definition "A physical sample (object or entity) obtained for observations, typically performed ex situ, often in a laboratory"@en ;
+  skos:prefLabel "Specimen" ;
+  skos:definition "A physical sample (object or entity) obtained for observations, typically performed ex situ, often in a laboratory"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:streamGage a skos:Concept ;
-	skos:prefLabel "Stream gage" ;
-	skos:definition "A location used to monitor and test terrestrial bodies of water. Hydrometric measurements of water level, surface elevation (\"stage\") and/or volumetric discharge (flow) are generally taken, and observations of biota and water quality may also be made"@en ;
+  skos:prefLabel "Stream gage" ;
+  skos:definition "A location used to monitor and test terrestrial bodies of water. Hydrometric measurements of water level, surface elevation (\"stage\") and/or volumetric discharge (flow) are generally taken, and observations of biota and water quality may also be made"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:trajectory a skos:Concept ;
-	skos:prefLabel "Trajectory" ;
-	skos:definition "The path that a moving object follows through space as a function of time. A trajectory can be described by the geometry of the path or as the position of the object over time"@en ;
+  skos:prefLabel "Trajectory" ;
+  skos:definition "The path that a moving object follows through space as a function of time. A trajectory can be described by the geometry of the path or as the position of the object over time"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:transect a skos:Concept ;
-	skos:prefLabel "Transect" ;
-	skos:definition "A path along which ocurrences of a phenomena of study are counted or measured"@en ;
+  skos:prefLabel "Transect" ;
+  skos:definition "A path along which ocurrences of a phenomena of study are counted or measured"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:traverse a skos:Concept ;
-	skos:prefLabel "Traverse" ;
-	skos:definition "A field control network consisting of survey stations placed along a line or path of travel"@en ;
+  skos:prefLabel "Traverse" ;
+  skos:definition "A field control network consisting of survey stations placed along a line or path of travel"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:waterQualityStation a skos:Concept ;
-	skos:prefLabel "Water quality station" ;
-	skos:definition "A location used to monitor and test the quality of terrestrial bodies of water. Water quality stations may be locations at which physical water samples are collected for ex situ analysis. Water qulaity stations may also have instruments and equipment for continuous, in situ measurement of water quality variables"@en ;
+  skos:prefLabel "Water quality station" ;
+  skos:definition "A location used to monitor and test the quality of terrestrial bodies of water. Water quality stations may be locations at which physical water samples are collected for ex situ analysis. Water qulaity stations may also have instruments and equipment for continuous, in situ measurement of water quality variables"@en ;
   skos:topConceptOf feature: ;
 .
 
 sft:weatherStation a skos:Concept ;
-	skos:prefLabel "Weather station" ;
-	skos:definition "A facility, either on land or sea, with instruments and equipment for measuring atmospheric conditions to provide information for weather forecasts and to study weather and climate"@en ;
+  skos:prefLabel "Weather station" ;
+  skos:definition "A facility, either on land or sea, with instruments and equipment for measuring atmospheric conditions to provide information for weather forecasts and to study weather and climate"@en ;
   skos:topConceptOf feature: ;
 .
 
 <http://www.opengis.net/def/nil/OGC/0/unknown> a skos:Concept ;
-	skos:prefLabel "Unknown" ;
+  skos:prefLabel "Unknown" ;
   skos:definition "The correct value is not known to, or not computable by, the sender of this data. However, the correct value probably exists"@en ;
-	skos:topConceptOf feature: ;
+  skos:topConceptOf feature: ;
 .
