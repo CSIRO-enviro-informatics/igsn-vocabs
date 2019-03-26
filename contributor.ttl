@@ -14,13 +14,13 @@ contributor: a skos:ConceptScheme ;
   dct:description """This vocabulary contains terms describing sets of things"""@en ;
   dct:created "2019-03-20"^^xsd:date ;
   dct:issued "2019-03-20"^^xsd:date ;
-	dc:creator "IGSN Technical Committee" ;
+  dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
-	dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   dc:publisher "Geoscience Australia" ;
   dct:publisher <http://catalogue.linked.data.gov.au/org/O-000887> ;
-	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/contributorType.xsd> ;
-	owl:versionInfo "v1.0" ;
+  dct:source <https://github.com/IGSN/metadata/blob/master/description/include/contributorType.xsd> ;
+  owl:versionInfo "v1.0" ;
   skos:historyNote "This vocabulary was extracted from a previous SKOS publication of the IGSN codelists at http://pid.geoscience.gov.au/def/voc/ga/igsncode to separate what that vocabulary had as multiple skos:Collections into individual vocabularies (skos:ConceptSchemes)." ;
   skos:hasTopConcept
     :ContactPerson ,
@@ -43,8 +43,8 @@ contributor: a skos:ConceptScheme ;
 .
 
 :ContactPerson a skos:Concept ;
-	skos:prefLabel "Contact person" ;
-	skos:definition "the individual or organization who is responsible for the initial triage of and answering questions related to the resource"@en ;
+  skos:prefLabel "Contact person" ;
+  skos:definition "the individual or organization who is responsible for the initial triage of and answering questions related to the resource"@en ;
   skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
@@ -52,8 +52,8 @@ contributor: a skos:ConceptScheme ;
 .
 
 :Distributor a skos:Concept ;
-	skos:prefLabel "Distributor" ;
-	skos:definition "A person or organization that is responsible for providing required access to the data"@en ;
+  skos:prefLabel "Distributor" ;
+  skos:definition "A person or organization that is responsible for providing required access to the data"@en ;
   skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
@@ -61,17 +61,17 @@ contributor: a skos:ConceptScheme ;
 .
 
 :Editor a skos:Concept ;
-	skos:prefLabel "Editor" ;
+  skos:prefLabel "Editor" ;
   skos:defintion "A person in overall charge of the editing" ;
-	skos:topConceptOf contributor: ;
+  skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 :Funder a skos:Concept ;
-	skos:prefLabel "Funder" ;
-	skos:definition "An individual or organization which has provided all or part of the finances associated with the resource"@en ;
+  skos:prefLabel "Funder" ;
+  skos:definition "An individual or organization which has provided all or part of the finances associated with the resource"@en ;
   skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
@@ -79,8 +79,8 @@ contributor: a skos:ConceptScheme ;
 .
 
 :HostingInstitution a skos:Concept ;
-	skos:prefLabel "Hosting institution" ;
-	skos:definition "The institution that hosts the physical sample"@en ;
+  skos:prefLabel "Hosting institution" ;
+  skos:definition "The institution that hosts the physical sample"@en ;
   skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
@@ -88,8 +88,8 @@ contributor: a skos:ConceptScheme ;
 .
 
 :Other a skos:Concept ;
-	skos:prefLabel "Other" ;
-	skos:definition "The value is one other than those in the selectable list. It is not unknown"@en ;
+  skos:prefLabel "Other" ;
+  skos:definition "The value is one other than those in the selectable list. It is not unknown"@en ;
   skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
@@ -97,8 +97,8 @@ contributor: a skos:ConceptScheme ;
 .
 
 :ProjectLeader a skos:Concept ;
-	skos:prefLabel "Project leader" ;
-	skos:definition "A person who lead a project"@en ;
+  skos:prefLabel "Project leader" ;
+  skos:definition "A person who lead a project"@en ;
   skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
@@ -106,8 +106,8 @@ contributor: a skos:ConceptScheme ;
 .
 
 :ProjectManager a skos:Concept ;
-	skos:prefLabel "Project manager" ;
-	skos:definition "A person who managed a project"@en ;
+  skos:prefLabel "Project manager" ;
+  skos:definition "A person who managed a project"@en ;
   skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
@@ -115,8 +115,8 @@ contributor: a skos:ConceptScheme ;
 .
 
 :ProjectMember a skos:Concept ;
-	skos:prefLabel "Project member" ;
-	skos:definition "A member of a project team"@en ;
+  skos:prefLabel "Project member" ;
+  skos:definition "A member of a project team"@en ;
   skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
@@ -124,8 +124,8 @@ contributor: a skos:ConceptScheme ;
 .
 
 :RelatedPerson a skos:Concept ;
-	skos:prefLabel "Related person" ;
-	skos:definition "A person related to an object of interest (a sample), possibly in an unknonwn way"@en ;
+  skos:prefLabel "Related person" ;
+  skos:definition "A person related to an object of interest (a sample), possibly in an unknonwn way"@en ;
   skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
@@ -133,8 +133,8 @@ contributor: a skos:ConceptScheme ;
 .
 
 :ResearchGroup a skos:Concept ;
-	skos:prefLabel "Research group" ;
-	skos:definition "A group conducting research"@en ;
+  skos:prefLabel "Research group" ;
+  skos:definition "A group conducting research"@en ;
   skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
@@ -142,8 +142,8 @@ contributor: a skos:ConceptScheme ;
 .
 
 :Researcher a skos:Concept ;
-	skos:prefLabel "Researcher" ;
-	skos:definition "A person undertaking research"@en ;
+  skos:prefLabel "Researcher" ;
+  skos:definition "A person undertaking research"@en ;
   skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
@@ -151,8 +151,8 @@ contributor: a skos:ConceptScheme ;
 .
 
 :RightsHolder a skos:Concept ;
-	skos:prefLabel "Rights holder" ;
-	skos:definition "A person or organisation holding rights to an object of interest (a sample)"@en ;
+  skos:prefLabel "Rights holder" ;
+  skos:definition "A person or organisation holding rights to an object of interest (a sample)"@en ;
   skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
@@ -160,8 +160,8 @@ contributor: a skos:ConceptScheme ;
 .
 
 :Sponsor a skos:Concept ;
-	skos:prefLabel "Sponsor" ;
-	skos:definition "The individual or organization who is providing sponsorship for the resource"@en ;
+  skos:prefLabel "Sponsor" ;
+  skos:definition "The individual or organization who is providing sponsorship for the resource"@en ;
   skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
@@ -169,8 +169,8 @@ contributor: a skos:ConceptScheme ;
 .
 
 :Supervisor a skos:Concept ;
-	skos:prefLabel "Supervisor" ;
-	skos:definition "A person who guides"@en ;
+  skos:prefLabel "Supervisor" ;
+  skos:definition "A person who guides"@en ;
   skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
@@ -178,14 +178,14 @@ contributor: a skos:ConceptScheme ;
 .
 
 <http://www.opengis.net/def/nil/OGC/0/unknown> a skos:Concept ;
-	skos:prefLabel "Unknown" ;
+  skos:prefLabel "Unknown" ;
   skos:definition "The correct value is not known to, or not computable by, the sender of this data. However, the correct value probably exists"@en ;
-	skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/collection> ;
+  skos:topConceptOf <http://pid.geoscience.gov.au/def/voc/ga/igsn/collection> ;
 .
 
 :WorkPackageLeader a skos:Concept ;
-	skos:prefLabel "Work package leader" ;
-	skos:definition "A leader of a package of work"@en ;
+  skos:prefLabel "Work package leader" ;
+  skos:definition "A leader of a package of work"@en ;
   skos:topConceptOf contributor: ;
   dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
