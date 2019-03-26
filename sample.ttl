@@ -13,208 +13,208 @@
 sample:  a skos:ConceptScheme ;
   dct:title "IGSN Sample Types"@en ;
   dct:description """This vocabulary contains terms describing the types of sample at the highest level"""@en ;
-	dc:creator "Nicholas Car" ;
-	dct:created "2019-03-20"^^xsd:date ;
-	dct:creator <http://orcid.org/0000-0002-8742-7730> ;
-	dct:issued "2019-03-20"^^xsd:date ;
-	dct:issued "2019-03-20"^^xsd:date ;
-	dct:publisher <http://catalogue.linked.data.gov.au/org/O-000887> ;
+  dc:creator "Nicholas Car" ;
+  dct:created "2019-03-20"^^xsd:date ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+  dct:issued "2019-03-20"^^xsd:date ;
+  dct:issued "2019-03-20"^^xsd:date ;
+  dct:publisher <http://catalogue.linked.data.gov.au/org/O-000887> ;
   dc:publisher "Geoscience Australia" ;
-	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/sampleType.xsd> ;
-	owl:versionInfo "v1.0" ;
+  dct:source <https://github.com/IGSN/metadata/blob/master/description/include/sampleType.xsd> ;
+  owl:versionInfo "v1.0" ;
   skos:historyNote "This vocabulary was extracted from a previous SKOS publication of the IGSN codelists at http://pid.geoscience.gov.au/def/voc/ga/igsncode to separate what that vocabulary had as multiple skos:Collections into individual vocabularies (skos:ConceptSchemes)." ;
   skos:usageNote "This vocabulary is obviously predicated on geo- and some forms of bio- samples and isn't appropriate for categorisations of sample types in general" ;
   skos:hasTopConcept
-		:automated ,
-		:core ,
-		:coreHalfRound ,
-		:corePiece ,
-		:coreQuarterRound ,
-		:coreSection ,
-		:coreSectionHalf ,
-		:coreSub-Piece ,
-		:coreWholeRound ,
-		:cuttings ,
-		:dredge ,
-		:foliageDigestion ,
-		:foliageLeaching ,
-		:forestFloorDigestion ,
-		:grab ,
-		:individualSample ,
-		:litterFallDigestion ,
-		:orientedCore ,
-		:other ,
-		:petriDishDryDeposition ,
-		:precipitationBulk ,
-		:rockPowder ,
-		:standardReferenceSpecimen ,
-		:terrestrialSection ,
+    :automated ,
+    :core ,
+    :coreHalfRound ,
+    :corePiece ,
+    :coreQuarterRound ,
+    :coreSection ,
+    :coreSectionHalf ,
+    :coreSub-Piece ,
+    :coreWholeRound ,
+    :cuttings ,
+    :dredge ,
+    :foliageDigestion ,
+    :foliageLeaching ,
+    :forestFloorDigestion ,
+    :grab ,
+    :individualSample ,
+    :litterFallDigestion ,
+    :orientedCore ,
+    :other ,
+    :petriDishDryDeposition ,
+    :precipitationBulk ,
+    :rockPowder ,
+    :standardReferenceSpecimen ,
+    :terrestrialSection ,
     :theSpecimenTypeIsUnknown ,
     :thinSection ;
 .
 
 :automated a skos:Concept ;
-	skos:prefLabel "Automated" ;
-	skos:definition "Sample collected using an automated sampler"@en ;
+  skos:prefLabel "Automated" ;
+  skos:definition "Sample collected using an automated sampler"@en ;
   skos:topConceptOf sample: ;
 .
 
 :core a skos:Concept ;
-	skos:prefLabel "Core" ;
-	skos:definition "Long cylindrical cores"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Core" ;
+  skos:definition "Long cylindrical cores"@en ;
+  skos:topConceptOf sample: ;
 .
 
 :coreHalfRound a skos:Concept ;
-	skos:prefLabel "Core half round" ;
-	skos:definition "Half-cylindrical products of along-axis split of a whole round"@en ;
-	skos:topConceptOf sample: ;
-	skos:broader :core ;
+  skos:prefLabel "Core half round" ;
+  skos:definition "Half-cylindrical products of along-axis split of a whole round"@en ;
+  skos:topConceptOf sample: ;
+  skos:broader :core ;
 .
 
 :corePiece a skos:Concept ;
-	skos:prefLabel "Core piece" ;
-	skos:definition "Material occurring between unambiguous [as curated] breaks in recovery"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Core piece" ;
+  skos:definition "Material occurring between unambiguous [as curated] breaks in recovery"@en ;
+  skos:topConceptOf sample: ;
   skos:broader :core ;
 .
 
 :coreQuarterRound a skos:Concept ;
-	skos:prefLabel "Core quarter round" ;
-	skos:definition "Quarter-cylindrical products of along-axis split of a half round"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Core quarter round" ;
+  skos:definition "Quarter-cylindrical products of along-axis split of a half round"@en ;
+  skos:topConceptOf sample: ;
   skos:broader :core ;
 .
 
 :coreSection a skos:Concept ;
-	skos:prefLabel "Core section" ;
-	skos:definition "Arbitrarily cut segments of a \"core\""@en ;
-	skos:topConceptOf sample: ;
-	dct:source "http://vocabulary.odm2.org/specimentype/coreSection" ;
+  skos:prefLabel "Core section" ;
+  skos:definition "Arbitrarily cut segments of a \"core\""@en ;
+  skos:topConceptOf sample: ;
+  dct:source "http://vocabulary.odm2.org/specimentype/coreSection" ;
   skos:broader :core ;
 .
 
 :coreSectionHalf a skos:Concept ;
-	skos:prefLabel "Core section half" ;
-	skos:definition "Half-cylindrical products of along-axis split of a section or its component fragments through a selected diameter"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Core section half" ;
+  skos:definition "Half-cylindrical products of along-axis split of a section or its component fragments through a selected diameter"@en ;
+  skos:topConceptOf sample: ;
   skos:broader :core ;
 .
 
 :coreSub-Piece a skos:Concept ;
-	skos:prefLabel "Core sub-piece" ;
-	skos:definition "Unambiguously mated portion of a larger piece noted for curatorial management of the material"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Core sub-piece" ;
+  skos:definition "Unambiguously mated portion of a larger piece noted for curatorial management of the material"@en ;
+  skos:topConceptOf sample: ;
   skos:broader :core ;
 .
 
 :coreWholeRound a skos:Concept ;
-	skos:prefLabel "Core whole round" ;
-	skos:definition "Cylindrical segments of core or core section material"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Core whole round" ;
+  skos:definition "Cylindrical segments of core or core section material"@en ;
+  skos:topConceptOf sample: ;
   skos:broader :core ;
 .
 
 :cuttings a skos:Concept ;
-	skos:prefLabel "Cuttings" ;
-	skos:definition "Loose, coarse, unconsolidated material suspended in drilling fluid"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Cuttings" ;
+  skos:definition "Loose, coarse, unconsolidated material suspended in drilling fluid"@en ;
+  skos:topConceptOf sample: ;
 .
 
 :dredge a skos:Concept ;
-	skos:prefLabel "Dredge" ;
-	skos:definition "A group of rocks collected by dragging a dredge along the seafloor"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Dredge" ;
+  skos:definition "A group of rocks collected by dragging a dredge along the seafloor"@en ;
+  skos:topConceptOf sample: ;
 .
 
 :foliageDigestion a skos:Concept ;
-	skos:prefLabel "Foliage digestion" ;
-	skos:definition "Sample that consists of a digestion of plant foliage"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Foliage digestion" ;
+  skos:definition "Sample that consists of a digestion of plant foliage"@en ;
+  skos:topConceptOf sample: ;
 .
 
 :foliageLeaching a skos:Concept ;
-	skos:prefLabel "Foliage leaching" ;
-	skos:topConceptOf sample: ;
-	skos:definition "Sample that consists of leachate from foliage"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Foliage leaching" ;
+  skos:topConceptOf sample: ;
+  skos:definition "Sample that consists of leachate from foliage"@en ;
+  skos:topConceptOf sample: ;
 .
 
 :forestFloorDigestion a skos:Concept ;
-	skos:prefLabel "Forest floor digestion" ;
-	skos:definition "Sample that consists of a digestion of forest floor material"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Forest floor digestion" ;
+  skos:definition "Sample that consists of a digestion of forest floor material"@en ;
+  skos:topConceptOf sample: ;
 .
 
 :grab a skos:Concept ;
-	skos:prefLabel "Grab" ;
-	skos:definition "A sample (sometimes mechanically collected) from a deposit or area, not intended to be representative of the deposit or area"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Grab" ;
+  skos:definition "A sample (sometimes mechanically collected) from a deposit or area, not intended to be representative of the deposit or area"@en ;
+  skos:topConceptOf sample: ;
 .
 
 :individualSample a skos:Concept ;
-	skos:prefLabel "Individual sample" ;
-	skos:definition "A sample that is an individual unit, including rock hand samples, a biological specimen, or a bottle of fluid"@en ;
-	skos:topConceptOf sample: ;
-	dct:source "http://vocabulary.odm2.org/specimentype/individualSample" ;
+  skos:prefLabel "Individual sample" ;
+  skos:definition "A sample that is an individual unit, including rock hand samples, a biological specimen, or a bottle of fluid"@en ;
+  skos:topConceptOf sample: ;
+  dct:source "http://vocabulary.odm2.org/specimentype/individualSample" ;
 .
 
 :litterFallDigestion a skos:Concept ;
-	skos:prefLabel "Litter fall digestion" ;
-	skos:definition "Sample that consists of a digestion of litter fall"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Litter fall digestion" ;
+  skos:definition "Sample that consists of a digestion of litter fall"@en ;
+  skos:topConceptOf sample: ;
 .
 
 :orientedCore a skos:Concept ;
-	skos:prefLabel "Oriented core" ;
-	skos:definition "Core that can be positioned on the surface in the same way that it was arranged in the borehole before extraction"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Oriented core" ;
+  skos:definition "Core that can be positioned on the surface in the same way that it was arranged in the borehole before extraction"@en ;
+  skos:topConceptOf sample: ;
 .
 
 :other a skos:Concept ;
-	skos:prefLabel "Other" ;
-	skos:definition "Sample does not fit any of the existing type designations. It is expected that further detailed description of the particular sample be provided"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Other" ;
+  skos:definition "Sample does not fit any of the existing type designations. It is expected that further detailed description of the particular sample be provided"@en ;
+  skos:topConceptOf sample: ;
 .
 
 :petriDishDryDeposition a skos:Concept ;
-	skos:prefLabel "Petri dish deposition" ;
-	skos:definition "Sample from dry deposition in a petri dish"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Petri dish deposition" ;
+  skos:definition "Sample from dry deposition in a petri dish"@en ;
+  skos:topConceptOf sample: ;
 .
 
 :precipitationBulk a skos:Concept ;
-	skos:prefLabel "Precipitation bulk" ;
-	skos:definition "Sample from bulk precipitation"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Precipitation bulk" ;
+  skos:definition "Sample from bulk precipitation"@en ;
+  skos:topConceptOf sample: ;
 .
 
 :rockPowder a skos:Concept ;
-	skos:prefLabel "Rock powder" ;
-	skos:definition "A sample created from pulverizing a rock to powder"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Rock powder" ;
+  skos:definition "A sample created from pulverizing a rock to powder"@en ;
+  skos:topConceptOf sample: ;
 .
 
 :standardReferenceSpecimen a skos:Concept ;
-	skos:prefLabel "Standard referece specimen" ;
-	skos:definition "Standard reference specimen"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Standard referece specimen" ;
+  skos:definition "Standard reference specimen"@en ;
+  skos:topConceptOf sample: ;
 .
 
 :terrestrialSection a skos:Concept ;
-	skos:prefLabel "Terrestrial section" ;
-	skos:definition "A sample of a section of the near-surface Earth, generally in the critical zone"@en  ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Terrestrial section" ;
+  skos:definition "A sample of a section of the near-surface Earth, generally in the critical zone"@en  ;
+  skos:topConceptOf sample: ;
 .
 
 :theSpecimenTypeIsUnknown a skos:Concept ;
-	skos:prefLabel "Unknown" ;
-	skos:definition "The specimen type is unknown"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Unknown" ;
+  skos:definition "The specimen type is unknown"@en ;
+  skos:topConceptOf sample: ;
 .
 
 :thinSection a skos:Concept ;
-	skos:prefLabel "Thin section" ;
-	skos:definition "Thin section"@en ;
-	skos:topConceptOf sample: ;
+  skos:prefLabel "Thin section" ;
+  skos:definition "Thin section"@en ;
+  skos:topConceptOf sample: ;
 .
