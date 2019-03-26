@@ -14,13 +14,13 @@ collection: a skos:ConceptScheme ;
   dct:description """This vocabulary contains terms describing sets of things"""@en ;
   dct:created "2019-03-20"^^xsd:date ;
   dct:issued "2019-03-20"^^xsd:date ;
-	dc:creator "IGSN Technical Committee" ;
+  dc:creator "IGSN Technical Committee" ;
   dc:contributor "Nicholas Car" ;
-	dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
+  dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
   dc:publisher "Geoscience Australia" ;
   dct:publisher <http://catalogue.linked.data.gov.au/org/O-000887> ;
-	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/collectionType.xsd> ;
-	owl:versionInfo "v1.0" ;
+  dct:source <https://github.com/IGSN/metadata/blob/master/description/include/collectionType.xsd> ;
+  owl:versionInfo "v1.0" ;
   skos:historyNote "This vocabulary was extracted from a previous SKOS publication of the IGSN codelists at http://pid.geoscience.gov.au/def/voc/ga/igsncode to separate what that vocabulary had as multiple skos:Collections into individual vocabularies (skos:ConceptSchemes)." ;
   skos:hasTopConcept
     :Collection ,
@@ -28,16 +28,16 @@ collection: a skos:ConceptScheme ;
 .
 
 :Collection a skos:Concept ;
-	skos:prefLabel "Collection" ;
+  skos:prefLabel "Collection" ;
   skos:definition "A set of things"@en ;
-	skos:topConceptOf collection: ;
-	dct:creator "IGSN Technical Committee" ;
-	dct:contributor "Nicholas Car" ;
+  skos:topConceptOf collection: ;
+  dct:creator "IGSN Technical Committee" ;
+  dct:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 <http://www.opengis.net/def/nil/OGC/0/unknown> a skos:Concept ;
-	skos:prefLabel "Unknown" ;
+  skos:prefLabel "Unknown" ;
   skos:definition "The correct value is not known to, or not computable by, the sender of this data. However, the correct value probably exists"@en ;
-	skos:topConceptOf collection: ;
+  skos:topConceptOf collection: ;
 .
