@@ -33,49 +33,49 @@
 .
 
 :LineString a skos:Concept ;
-	skos:prefLabel "Line string" ;
-	skos:definition "A series of Point objects with assumed linear interpolation in between"@en ;
-	skos:topConceptOf geometry: ;
-	dct:source "Nicholas Car / GML" ;
+  skos:prefLabel "Line string" ;
+  skos:definition "A series of Point objects with assumed linear interpolation in between"@en ;
+  skos:topConceptOf geometry: ;
+  dct:source "Nicholas Car / GML" ;
 .
 
 :MultiLineString a skos:Concept ;
-	skos:prefLabel "Multi line string" ;
-	skos:definition "Multiple LineStrings"@en ;
+  skos:prefLabel "Multi line string" ;
+  skos:definition "Multiple LineStrings"@en ;
   skos:topConceptOf geometry: ;
-	dct:source "Nicholas Car / GML" ;
+  dct:source "Nicholas Car / GML" ;
 .
 
 :MultiPoint a skos:Concept ;
-	skos:prefLabel "Multi point" ;
-	skos:definition "Multiple Points"@en ;
+  skos:prefLabel "Multi point" ;
+  skos:definition "Multiple Points"@en ;
   skos:topConceptOf geometry: ;
-	dct:source "Nicholas Car / GML" ;
+  dct:source "Nicholas Car / GML" ;
 .
 
 :MultiPolygon a skos:Concept ;
-	skos:prefLabel "Multi polygon" ;
-	skos:definition "Multiple Polygons"@en ;
+  skos:prefLabel "Multi polygon" ;
+  skos:definition "Multiple Polygons"@en ;
   skos:topConceptOf geometry: ;
-	dct:source "Nicholas Car / GML" ;
+  dct:source "Nicholas Car / GML" ;
 .
 
 :Point a skos:Concept ;
-	skos:prefLabel "Point" ;
-	skos:definition "A 0-dimensional geometric primitive, representing a position, as defined by the OGC's GML standard"@en ;
+  skos:prefLabel "Point" ;
+  skos:definition "A 0-dimensional geometric primitive, representing a position, as defined by the OGC's GML standard"@en ;
   skos:topConceptOf geometry: ;
-	dct:source "Geographic Markup Language" ;
+  dct:source "Geographic Markup Language" ;
 .
 
 :Polygon a skos:Concept ;
-	skos:prefLabel "Polygon" ;
-	skos:definition "A planar surface defined by 1 exterior boundary and 0 or more interior boundaries"@en ;
+  skos:prefLabel "Polygon" ;
+  skos:definition "A planar surface defined by 1 exterior boundary and 0 or more interior boundaries"@en ;
   skos:topConceptOf geometry: ;
-	dct:source "Geographic Markup Language" ;
+  dct:source "Geographic Markup Language" ;
 .
 
 <http://www.opengis.net/def/nil/OGC/0/unknown> a skos:Concept ;
-	skos:prefLabel "Unknown" ;
+  skos:prefLabel "Unknown" ;
   skos:definition "The correct value is not known to, or not computable by, the sender of this data. However, the correct value probably exists"@en ;
-	skos:topConceptOf geometry: ;
+  skos:topConceptOf geometry: ;
 .
