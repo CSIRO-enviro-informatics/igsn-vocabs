@@ -14,42 +14,42 @@
   dct:description """This vocabulary contains terms describing the ways in which physical samples may be retrieved by various groups of people, perhaps the sample custodians and other non custodians who wish to inspect them.
 
 If anyone may view the sample, the Access Type 'Public' should be used. If obtaining/viewing the sample is restricted, 'Private' should be used."""@en ;
-	dc:creator "Nicholas Car" ;
-	dct:created "2019-03-20"^^xsd:date ;
-	dct:creator <http://orcid.org/0000-0002-8742-7730> ;
-	dct:description "A SKOS vocabulary version of the IGSN Access Type codelists."@en ;
-	dct:issued "2019-03-20"^^xsd:date ;
-	dct:issued "2019-03-20"^^xsd:date ;
-	dct:publisher <http://catalogue.linked.data.gov.au/org/O-000887> ;
+  dc:creator "Nicholas Car" ;
+  dct:created "2019-03-20"^^xsd:date ;
+  dct:creator <http://orcid.org/0000-0002-8742-7730> ;
+  dct:description "A SKOS vocabulary version of the IGSN Access Type codelists."@en ;
+  dct:issued "2019-03-20"^^xsd:date ;
+  dct:issued "2019-03-20"^^xsd:date ;
+  dct:publisher <http://catalogue.linked.data.gov.au/org/O-000887> ;
   dc:publisher "Geoscience Australia" ;
-	dct:source <https://github.com/IGSN/metadata/blob/master/description/include/accessType.xsd> ;
-	owl:versionInfo "v1.0" ;
+  dct:source <https://github.com/IGSN/metadata/blob/master/description/include/accessType.xsd> ;
+  owl:versionInfo "v1.0" ;
   skos:historyNote "This vocabulary was extracted from a previous SKOS publication of the IGSN codelists at http://pid.geoscience.gov.au/def/voc/ga/igsncode to separate what that vocabulary had as multiple skos:Collections into individual vocabularies (skos:ConceptSchemes)." ;
   skos:hasTopConcept
-	  <https://epsg.io/4326> ,
+    <https://epsg.io/4326> ,
     <https://epsg.io/4938> ,
     <http://www.opengis.net/def/nil/OGC/0/unknown> ;
 .
 
 <https://epsg.io/4326> a skos:Concept ;
-	skos:prefLabel "World Geodetic System 1984" ;
-	skos:definition "World Geodetic System 1984, used in GPS"@en ;
+  skos:prefLabel "World Geodetic System 1984" ;
+  skos:definition "World Geodetic System 1984, used in GPS"@en ;
   skos:topConceptOf :srid ;
-	dct:source "https://epsg.io/4326" ;
-	dct:contributor "IGSN Technical Committee" ;
+  dct:source "https://epsg.io/4326" ;
+  dct:contributor "IGSN Technical Committee" ;
 .
 
 <https://epsg.io/4938> a skos:Concept ;
-	skos:prefLabel "Geocentric Datum of Australia 1994" ;
-	skos:definition "GDA94 Geocentric coordinate system "@en ;
+  skos:prefLabel "Geocentric Datum of Australia 1994" ;
+  skos:definition "GDA94 Geocentric coordinate system "@en ;
   skos:topConceptOf :srid ;
-	dct:source "https://epsg.io/4938" ;
+  dct:source "https://epsg.io/4938" ;
   dct:contributor "Nicholas Car" ;
   dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
 .
 
 <http://www.opengis.net/def/nil/OGC/0/unknown> a skos:Concept ;
-	skos:prefLabel "Unknown" ;
+  skos:prefLabel "Unknown" ;
   skos:definition "The correct value is not known to, or not computable by, the sender of this data. However, the correct value probably exists"@en ;
-	skos:topConceptOf :srid ;
+  skos:topConceptOf :srid ;
 .
